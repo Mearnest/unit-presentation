@@ -1,0 +1,36 @@
+extends ../layout.jade
+
+block head
+	script.
+		$(document).ready(function() {
+			bflResizeNavigation();
+		});
+
+block main
+	//- Includes happen at compile time, so they can't be passed a variable.
+	//- Need to look for an easier solution, probably in the config or controller.
+	
+	#content.col-md-9
+		case page
+			when "home"
+				include home
+			when "simply-said"
+				include simply-said
+			when "text"
+				include text
+			when "classroom-example"
+				include classroom-example
+			when "review-exercises"
+				include review-exercises
+			when "languages"
+				include languages	
+			when "credits"
+				include credits
+			default
+				<iframe width="600" height="600" src="/404" frameborder="0"></iframe>
+	
+block sidebar
+	include navigation
+	
+	
+	

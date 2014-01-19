@@ -1,0 +1,43 @@
+extends ../layout
+
+block main
+	h1.col-md-offset-1.title Importance of Introduction
+	
+	.row
+		.col-md-2.col-md-offset-1
+			.home-image
+				a.ajax(href="/unit/simply-said", data-title="Simply Said", data-nav="/unit/navigation")
+					img(src="/images/simply-said.png", style="width:130px")
+			p.home-text 
+				a.ajax(href="/unit/simply-said", data-title="Simply Said", data-nav="/unit/navigation") Simply Said
+			
+		.col-md-2
+			.home-image
+				a.ajax(href="/unit/text", data-title="Text", data-nav="/unit/navigation")
+					img(src="/images/text.png", style="width:120px")
+			p.home-text(style="padding-left:40px;") 
+				a.ajax(href="/unit/text", data-title="Text", data-nav="/unit/navigation") Text
+			
+		.col-md-2
+			.home-image
+				a.ajax(href="/unit/classroom-example", data-title="Classroom Example", data-nav="/unit/navigation")
+					img(src="/images/classroom-example.png", style="width:125px")
+			p.home-text(style="padding-left: 15px;")
+				a.ajax(href="/unit/classroom-example", data-title="Classroom Example", data-nav="/unit/navigation") Classroom Example
+			
+		.col-md-2
+			.home-image
+				a.ajax(href="/unit/review-exercises", data-title="Review Exercises", data-nav="/unit/navigation")
+					img(src="/images/review-exercises.png", style="width:110px")
+			p.home-text(style="padding-left:20px") 
+				a.ajax(href="/unit/review-exercises", data-title="Review Exercises", data-nav="/unit/navigation") Review Exercises
+			
+		.col-md-2
+			.home-image
+				a.ajax(href="/unit/credits", data-title="Credits", data-nav="/unit/navigation")
+					img(src="/images/credits.png", style="width:155px")
+			p.home-text(style="padding-left:25px;") 
+				a.ajax(href="/unit/credits", data-title="Credits", data-nav="/unit/navigation") Credits
+	
+				
+	
