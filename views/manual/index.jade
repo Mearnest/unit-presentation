@@ -10,32 +10,31 @@ block main
 	//- Includes happen at compile time, so they can't be passed a variable.
 	//- Need to look for an easier solution, probably in the config or controller.
 	
-	#content.col-md-9
-		case page
-			when "process"
-				include process
-			when "animation"
-				include animation
-			when "art"
-				include art
-			when "audio"
-				include audio
-			when "layout"
-				include layout
-			when "navigation"
-				include navigation
-			when "script"
-				include script
-			when "source-content"
-				include source-content
-			when "storyboard"
-				include storyboard
-			when "video-editing"
-				include video-editing
-			when "visual-brainstorm"
-				include visual-brainstorm
-			default
-				include ../404
+	case page
+		when "process"
+			include process
+		when "animation"
+			include animation
+		when "art"
+			include art
+		when "audio"
+			include audio
+		when "layout"
+			include layout
+		when "navigation"
+			include navigation
+		when "script"
+			include script
+		when "source-content"
+			include source-content
+		when "storyboard"
+			include storyboard
+		when "video-editing"
+			include video-editing
+		when "visual-brainstorm"
+			include visual-brainstorm
+		default
+			include ../404
 			
 block sidebar
 	include navigation

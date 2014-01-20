@@ -1,1 +1,63 @@
-<iframe width="560" height="315" src="//www.youtube.com/embed/MbQpDsP6AzU" frameborder="0" allowfullscreen></iframe>
+style.
+	input[type='radio'], input[type='checkbox'] {
+		margin-right: 10px;
+		padding: 5px;
+	}
+	
+	form.exercises {
+		font-size: 16px;
+	}
+	
+	div.question {
+		margin-top: 20px;
+	}
+
+h2.title Review Exercises
+
+form.exercises
+	div.question
+		h4 How much of the lesson should the introduction take?
+		
+		input(type="radio", name="parts", value="3/5") 
+		| 3/5 <br>
+		input(type="radio", name="parts", value="2/5") 
+		| 2/5 <br>
+		input(type="radio", name="parts", value="4/5") 
+		| 4/5 <br>
+		input(type="radio", name="parts", value="1/5") 
+		| 1/5 <br>
+		
+	div.question
+		h4 What does an introduction provide for a lesson?
+		
+		input(type="checkbox", name="parts", value="direction") 
+		| Direction <br>
+		input(type="checkbox", name="parts", value="vocabulary") 
+		| Vocabulary <br>
+		input(type="checkbox", name="parts", value="focus") 
+		| Focus <br>
+		input(type="checkbox", name="parts", value="review") 
+		| Review <br>
+		
+	div.question
+		h4 Type in what focus helps the teacher avoid:
+		
+		datalist#focus
+			option(value="Distraction")
+			option(value="Firefox")
+			option(value="Chrome")
+			option(value="Capture Interest")
+			option(value="Share Goals")
+			
+		input(list="focus")
+		
+	div.question
+		h4 How do you establish focus and direction?
+		
+		select(multiple="multiple", size="6")
+			option(value="Chicken Dance") Chicken Dance
+			option(value="Capture Interest") Capture Interest
+			option(value="Venn Diagram") Venn Diagram
+			option(value="Share Goals") Share Goals
+			option(value="Prepare Students") Prepare Students
+			option(value="Activate Schema") Activate Schema
