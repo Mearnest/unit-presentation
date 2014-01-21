@@ -54,7 +54,7 @@ module.exports.routes = {
 	'/unit/:page/ajax': {
 		controller: 'unit',
 		action: 'viewAjax'
-	},
+	}
 
   /*
   // But what if you want your home page to display

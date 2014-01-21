@@ -1,32 +1,40 @@
-ul.nav
-	li
-		a.ajax(href="/manual/source-content", tabindex="1") 
-			h3 Source Content
-	li
-		a.ajax(href="/manual/script", tabindex="2") 
-			h3 Script
-	li
-		a.ajax(href="/manual/visual-brainstorm", tabindex="3") 
-			h3 Visual Brainstorm
-	li
-		a.ajax(href="/manual/storyboard", tabindex="4") 
-			h3 Storyboard
-	li
-		a.ajax(href="/manual/art", tabindex="5") 
-			h3 Art
-	li
-		a.ajax(href="/manual/layout", tabindex="6") 
-			h3 Layout
-	li
-		a.ajax(href="/manual/audio", tabindex="7") 
-			h3 Audio
-	li
-		a.ajax(href="/manual/animation", tabindex="8") 
-			h3 Animation
-	li
-		a.ajax(href="/manual/video-editing", tabindex="9") 
-			h3 Video Editing
-	li
-		a(href="/",  tabindex="10") 
-			h3 Home
-		
+style.
+	#navigation {
+		margin-top: 25px;
+	}
+
+div
+	a.ajax(href="/manual/source-content", data-title="Source Content")
+		img.process(src="/images/source-content.png")
+	img.process(src="/images/small-arrow.png")
+
+	a.ajax(href="/manual/script", data-title="Script")
+		img.process(src="/images/script.png")
+	img.process(src="/images/small-arrow.png")
+
+	a.ajax(href="/manual/visual-brainstorm", data-title="Visual Brainstorm")
+		img.process(src="/images/visual-brainstorm.png")
+	img.process(src="/images/small-arrow.png")
+
+	a.ajax(href="/manual/storyboard", data-title="Storyboard")
+		img.process(src="/images/storyboard.png")
+	img.process(src="/images/small-arrow.png")
+
+	a.ajax(href="/manual/art", data-title="Art")
+		img.process(src="/images/art.png")
+	img.process(src="/images/small-arrow.png")
+
+	a.ajax(href="/manual/layout", data-title="Layout")
+		img.process(src="/images/layout.png")
+	img.process(src="/images/small-arrow.png")
+
+	a.ajax(href="/manual/audio", data-title="Audio")
+		img.process(src="/images/audio.png")
+	img.process(src="/images/small-arrow.png")
+
+	a.ajax(href="/manual/animation", data-title="Animation")
+		img.process(src="/images/animation.png")
+	img.process(src="/images/small-arrow.png")
+
+	a.ajax(href="/manual/video-editing", data-title="Video Editing")
+		img.process(src="/images/video-editing.png")

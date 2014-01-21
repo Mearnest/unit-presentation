@@ -16,7 +16,9 @@ html(lang="en")
 	script(src='http://code.jquery.com/jquery.min.js')
 		script.
 			!window.jQuery && document.write('<script src="/js/jquery.min.js"><\/script>');
+	script(src="http://code.jquery.com/ui/1.10.4/jquery-ui.js")
 	script(src="/js/navigation.js")
+	script(src="/js/bootstrap.min.js")
 	
 	//- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
 	//- WARNING: Respond.js doesn't work if you view the page via file:
@@ -32,30 +34,17 @@ html(lang="en")
 		#topbar
 			.container
 				a(href="/")
-					img(src="/images/lesson-unit.png")
+					h1.title Lesson Unit Demo
+						
 		
-		.container
-			#main.container.col-md-11
-				.wrapper
-					block main
-				
-			#sidebar.container.col-md-1
-				block sidebar
-				
-		.process(style="position: absolute; bottom: 20px; left: 40px;")
-			.home-image
-				a.ajax(href="/manual/process", data-title="Process ", data-nav="/manual/navigation")
-					img.img-responsive(src="/images/teacher-bridge.png")
-			p.home-text(style="position:relative; top: -100px; left: 85px") 
-				a.ajax(href="/manual/process", data-title="Process", data-nav="/manual/navigation") Lesson Manual
-				
-		.languages(style="position: absolute; bottom: 0px; right: 0px;")
-			.home-image
-				a.ajax(href="/unit/languages", data-title="Languages")
-					img.img-responsive(src="/images/languages.png", style="width:125px")
-			p.home-text(style="padding-left:10px;") 
-				a.ajax(href="/unit/languages", data-title="Languages") Languages
-
+		#navigation.container
+			block navigation
+			
+		#main.container
+			.wrapper
+				block main
+		
 		#footer
 			.container
+			
 		

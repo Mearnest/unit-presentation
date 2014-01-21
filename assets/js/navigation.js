@@ -19,18 +19,18 @@ $(document).ready(function() {
 	
 	function ajaxCall(page, title, navigation) {
 		if (navigation) {
-			$("#sidebar").fadeOut("fast", function() {
+			$("#navigation").fadeOut("fast", function() {
 				$.get(navigation + "/ajax", function(data) {
-					bflResizeNavigation();
-					
-					$("#sidebar").html(data);
+					$("#navigation").html(data);
 					$("a.ajax").removeClass("active");
 					$("a.ajax[data-title='" + title + "']").addClass("active");
+					
+					$("body").css("background-image", "url('/images/secondaryPageBG_v2.png')");
 					
 					// Need to assign click handlers for new content.
 					assignAjaxLinks();
 					
-					$("#sidebar").fadeIn("fast", function() {
+					$("#navigation").fadeIn("fast", function() {
 						// fade in
 					});
 				});
@@ -58,6 +58,8 @@ $(document).ready(function() {
 			ajaxCall(document.location, event.state.title);
 		}
 	}
+	
+	$( "a.ajax" ).draggable();
 });
 
 
@@ -69,9 +71,9 @@ function bflResizeNavigation() {
 	$("#main").removeClass("col-md-offset-1");
 	$("#main").addClass("col-md-8");
 	
-	$("#sidebar").removeClass("col-md-1");
-	$("#sidebar").addClass("col-md-offset-1");
-	$("#sidebar").addClass("col-md-3");
+	$("#navigation").removeClass("col-md-1");
+	$("#navigation").addClass("col-md-offset-1");
+	$("#navigation").addClass("col-md-3");
 }
 
 

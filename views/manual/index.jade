@@ -1,11 +1,8 @@
 extends ../layout.jade
 
-block head
-	script.
-		$(document).ready(function() {
-			bflResizeNavigation();
-		});
-
+block sidebar
+	include navigation
+	
 block main
 	//- Includes happen at compile time, so they can't be passed a variable.
 	//- Need to look for an easier solution, probably in the config or controller.
@@ -36,5 +33,3 @@ block main
 		default
 			include ../404
 			
-block sidebar
-	include navigation

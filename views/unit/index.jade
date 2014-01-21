@@ -3,8 +3,11 @@ extends ../layout.jade
 block head
 	script.
 		$(document).ready(function() {
-			bflResizeNavigation();
+			$("#footer").css("position", "relative");
 		});
+		
+block navigation
+	include navigation
 
 block main
 	//- Includes happen at compile time, so they can't be passed a variable.
@@ -27,9 +30,5 @@ block main
 			include credits
 		default
 			<iframe width="600" height="600" src="/404" frameborder="0"></iframe>
-	
-block sidebar
-	include navigation
-	
 	
 	

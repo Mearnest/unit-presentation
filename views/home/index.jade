@@ -1,10 +1,8 @@
 extends ../layout
 
 block main
-	h1.col-md-offset-1.title Importance of Introduction
-	
-	.row
-		.col-md-2.col-md-offset-1
+	.row(style="margin-top: 10px")
+		.col-md-2.col.col-md-offset-1
 			.home-image
 				a.ajax(href="/unit/simply-said", data-title="Simply Said", data-nav="/unit/navigation")
 					img(src="/images/simply-said.png", style="width:130px")
@@ -31,13 +29,30 @@ block main
 					img(src="/images/review-exercises.png", style="width:110px")
 			p.home-text(style="padding-left:20px") 
 				a.ajax(href="/unit/review-exercises", data-title="Review Exercises", data-nav="/unit/navigation") Review Exercises
-			
+				
 		.col-md-2
 			.home-image
 				a.ajax(href="/unit/credits", data-title="Credits", data-nav="/unit/navigation")
 					img(src="/images/credits.png", style="width:155px")
 			p.home-text(style="padding-left:25px;") 
 				a.ajax(href="/unit/credits", data-title="Credits", data-nav="/unit/navigation") Credits
+		
+	hr(style="border: 1px solid #9FD9E9;")
+	
+	.row(style="margin-top: 40px")
+		.col-md-3.col-md-offset-3
+			.home-image
+				a.ajax(href="/unit/languages", data-title="Translations", data-nav="/unit/navigation")
+					img(src="/images/languages.png", style="width: 125px;")
+			p.home-text(style="padding-left:10px;") 
+				a.ajax(href="/unit/languages", data-title="Translations", data-nav="/unit/navigation") Translations
+				
+		.col-md-3
+			.home-image
+				a.ajax(href="/manual/source-content", data-title="Source Content", data-nav="/manual/navigation")
+					img(src="/images/ManualIcon.png", style="width: 115px; padding-top: 25px;")
+			p.home-text 
+				a.ajax(href="/manual/source-content", data-title="Source Content", data-nav="/manual/navigation") Lesson Manual
 	
 				
 	
