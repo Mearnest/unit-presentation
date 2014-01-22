@@ -1,26 +1,15 @@
-style.
-	a.ajax {
-		margin-right:10px;
-	}
+link(href="/styles/navigation.css", rel="stylesheet")
 
-div(style="margin-top:25px")
-	a(href="/", data-title="Home", style="margin-right: 10px")
-		img.process(src="/images/home.png")
-
-	a.ajax(href="/unit/simply-said", data-title="Simply Said")
-		img.process(src="/images/simply-said-title.png")
-
-	a.ajax(href="/unit/text", data-title="Text")
-		img.process(src="/images/text-title.png")
-
-	a.ajax(href="/unit/classroom-example", data-title="Classroom Example")
-		img.process(src="/images/classroom-example-title.png")
-
-	a.ajax(href="/unit/review-exercises", data-title="Review Exercises")
-		img.process(src="/images/review-exercises-title.png")
-
-	a.ajax(href="/unit/credits", data-title="Credits")
-		img.process(src="/images/credits-title.png")
-		
-	a.ajax(href="/unit/languages", data-title="Translations")
-		img.process(src="/images/languages-title.png")
+ul.button
+	li
+		a.ajax(class="large button green", href="/unit/simply-said", data-title="Simply Said") Simply Said
+	li
+		a.ajax(class="large button purple", href="/unit/text", data-title="Text") Text
+	li
+		a.ajax(class="large button blue", href="/unit/classroom-example", data-title="Classroom Example") Classroom Example
+	li
+		a.ajax(class="large button orange", href="/unit/review-exercises", data-title="Review Exercises") Review Exercises
+	li
+		a.ajax(class="large button yellow", href="/unit/credits", data-title="Credits") Credits
+	li
+		a.ajax(class="large button red", href="/unit/languages", data-title="Translations") Translations

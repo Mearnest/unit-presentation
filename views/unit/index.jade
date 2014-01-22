@@ -1,9 +1,15 @@
 extends ../layout.jade
 
 block head
+	style.
+		body {
+			background-image: url('/images/secondaryPageBG_v2.png');
+		}
+	
 	script.
 		$(document).ready(function() {
-			$("#footer").css("position", "relative");
+			// need to reposition footer to the bottom
+			// $("#footer").css("position", "relative");
 		});
 		
 block navigation

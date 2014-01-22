@@ -1,6 +1,7 @@
 body {
 	background-image: url('/images/FrontPageBG_v1.png');
-	background-size: cover;
+	xbackground-size: cover;
+	overflow-y: scroll;
 }
 
 a:link {
@@ -21,9 +22,10 @@ p.home-text a:hover, p.home-text a.focus {
 }
 	
 #navigation {
-	margin-top: 0;
+	margin-top: 25px;
 	margin-bottom: 20px;
 	height: 60px;
+	xbackground-image: url('/images/secondaryPageBG_v2.png');
 	xbackground-color: #6FBAD8;
 }
 
@@ -36,7 +38,6 @@ p.home-text a:hover, p.home-text a.focus {
 }
 	
 	h1.title {
-		margin-bottom: 40px;
 		font-family: 'Bree Serif', serif;
 		color: #31859C;
 		font-size: 44px;
@@ -73,13 +74,7 @@ p.home-text a:hover, p.home-text a.focus {
 		padding-top: 20px;
 	}
 	
-	ul.nav {
-		margin-top: 40px;
-	}
-	
-	ul.nav li {
-		margin: 0 0 0 -10px;
-	}
+
 	
 	ul.main {
 		margin-top: 20px;

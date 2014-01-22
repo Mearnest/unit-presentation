@@ -36,6 +36,10 @@ module.exports.routes = {
 		view: 'home/index',
 	},
 	
+	'/test': {
+		view: 'test',
+	},
+	
 	'/manual/:page': {
 		controller: 'manual',
 		action: 'view'

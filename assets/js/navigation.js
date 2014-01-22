@@ -15,6 +15,7 @@ $(document).ready(function() {
 			ajaxCall(page, title, navigation);
 		});
 		
+		$( "a.ajax, img, h1, h2, p, iframe" ).draggable();
 	}
 	
 	function ajaxCall(page, title, navigation) {
@@ -58,8 +59,6 @@ $(document).ready(function() {
 			ajaxCall(document.location, event.state.title);
 		}
 	}
-	
-	$( "a.ajax" ).draggable();
 });
 
 
