@@ -83,6 +83,7 @@ p.home-text a:hover, p.home-text a.focus {
 	
 	p.blurb {
 		font-size: 16px;
+		padding: 5px;
 	}
 	
 	.row.sep {
