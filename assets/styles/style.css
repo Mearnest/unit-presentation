@@ -27,7 +27,7 @@ p.home-text a:hover, p.home-text a.focus {
 	margin-top: 25px;
 	margin-bottom: 20px;
 	height: 60px;
-	xbackground-image: url('/images/SecondayPageBG.png');
+	xbackground-image: url('/images/secondayPageBG.png');
 	xbackground-color: #6FBAD8;
 }
 
@@ -82,7 +82,7 @@ p.home-text a:hover, p.home-text a.focus {
 	}
 	
 	p.blurb {
-		font-size: 18px;
+		font-size: 16px;
 	}
 	
 	.row.sep {
