@@ -24,7 +24,7 @@ $(document).ready(function() {
 					$("a.ajax").removeClass("active");
 					$("a.ajax[data-title='" + title + "']").addClass("active");
 					
-					$("body").css("background-image", "url('/images/secondaryPageBG_v2.png')");
+					// $("body").css("background-image", "url('/images/secondaryPageBG_v2.png')");
 					
 					// Need to assign click handlers for new content.
 					assignAjaxLinks();
