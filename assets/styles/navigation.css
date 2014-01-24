@@ -89,10 +89,6 @@
 	float: left;
 }
 
-.navigation li a.active, .navigation li a.active:before, .navigation li a.active:after {
-	background-color: lightgray !important;
-}
-
 .navigation li a:after { 
 	content: " "; 
 	display: block; 
@@ -148,4 +144,12 @@
 .navigation.manual li:nth-child(9) a:after { border-left-color: #6F767B; }
 
 .navigation.manual li a:hover { background: gold }
-.navigation.manual li a:hover:after { border-left-color: gold }.
+.navigation.manual li a:hover:after { border-left-color: gold }
+
+.navigation li a.active {
+	background-color: lightgray !important;
+}
+
+.navigation li a.active:after {
+	border-left-color: lightgray !important;
+}

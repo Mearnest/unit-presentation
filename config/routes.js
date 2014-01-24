@@ -36,6 +36,14 @@ module.exports.routes = {
 		view: 'home/index',
 	},
 	
+	'/lesson-examples': {
+		view: 'home/lesson-examples',
+	},
+	
+	'/lesson-examples/ajax': {
+		view: 'home/videos',
+	},
+	
 	'/test': {
 		view: 'test',
 	},

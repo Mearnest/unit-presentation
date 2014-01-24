@@ -3,7 +3,12 @@ extends ../layout.jade
 block head
 	style.
 		body {
-			background-image: url('/images/secondaryPageBG_v2.png');
+			background-image: url('/images/SecondaryPageBG.png');
+			top: -30px;
+		}
+		
+		#main .wrapper {
+			margin-left: 60px;
 		}
 	
 	script.
@@ -20,8 +25,6 @@ block main
 	//- Need to look for an easier solution, probably in the config or controller.
 	
 	case page
-		when "home"
-			include home
 		when "simply-said"
 			include simply-said
 		when "text"

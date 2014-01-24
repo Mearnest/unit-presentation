@@ -14,11 +14,9 @@ $(document).ready(function() {
 			window.history.pushState(objState, title, page);
 			ajaxCall(page, title, navigation);
 		});
-		
-		$( "a.ajax, img, h1, h2, p, iframe" ).draggable();
 	}
 	
-	function ajaxCall(page, title, navigation) {
+	function ajaxCall(page, title, navigation, image) {
 		if (navigation) {
 			$("#navigation").fadeOut("fast", function() {
 				$.get(navigation + "/ajax", function(data) {
@@ -50,6 +48,13 @@ $(document).ready(function() {
 	}
 	
 	assignAjaxLinks();
+	
+	$("*").draggable(); // All elements on page are draggable
+	
+	$('.bxslider').bxSlider({
+		video: true,
+		useCSS: false
+	});
 	
 	// An event that fires when the user hits the browser back, forward or refresh.
 	// This works in conjunction with window.history.pushState.

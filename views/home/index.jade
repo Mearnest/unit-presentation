@@ -1,58 +1,49 @@
 extends ../layout
 
 block main
-	.row(style="margin-top: 10px")
-		.col-md-2.col.col-md-offset-1
+	.row(style="margin-top: 50px; text-align: center;")
+		.col-md-4
 			.home-image
-				a.ajax(href="/unit/simply-said", data-title="Simply Said", data-nav="/unit/navigation")
-					img(src="/images/simply-said.png", style="width:130px")
-			p.home-text 
-				a.ajax(href="/unit/simply-said", data-title="Simply Said", data-nav="/unit/navigation") Simply Said
+				a(href="/unit/simply-said", data-title="Simply Said", data-nav="/unit/navigation", style="padding-right: 15px;")
+					img(src="/images/simply-said.png", style="width: 130px;")
+			p.home-text(style="padding-left: 70px;") 
+				a(href="/unit/simply-said", data-title="Simply Said", data-nav="/unit/navigation") Simply Said
 			
-		.col-md-2
+		.col-md-4
 			.home-image
-				a.ajax(href="/unit/text", data-title="Text", data-nav="/unit/navigation")
-					img(src="/images/text.png", style="width:120px")
-			p.home-text(style="padding-left:40px;") 
-				a.ajax(href="/unit/text", data-title="Text", data-nav="/unit/navigation") Text
+				a(href="/unit/text", data-title="Text", data-nav="/unit/navigation")
+					img(src="/images/text.png", style="width: 120px")
+			p.home-text(style="padding-left: 85px;") 
+				a(href="/unit/text", data-title="Text", data-nav="/unit/navigation") Text
 			
-		.col-md-2
+		.col-md-4
 			.home-image
-				a.ajax(href="/unit/classroom-example", data-title="Classroom Example", data-nav="/unit/navigation")
-					img(src="/images/classroom-example.png", style="width:125px")
-			p.home-text(style="padding-left: 15px;")
-				a.ajax(href="/unit/classroom-example", data-title="Classroom Example", data-nav="/unit/navigation") Classroom Example
-			
-		.col-md-2
-			.home-image
-				a.ajax(href="/unit/review-exercises", data-title="Review Exercises", data-nav="/unit/navigation")
-					img(src="/images/review-exercises.png", style="width:110px")
-			p.home-text(style="padding-left:20px") 
-				a.ajax(href="/unit/review-exercises", data-title="Review Exercises", data-nav="/unit/navigation") Review Exercises
-				
-		.col-md-2
-			.home-image
-				a.ajax(href="/unit/credits", data-title="Credits", data-nav="/unit/navigation")
-					img(src="/images/credits.png", style="width:155px")
-			p.home-text(style="padding-left:25px;") 
-				a.ajax(href="/unit/credits", data-title="Credits", data-nav="/unit/navigation") Credits
-		
-	hr(style="border: 1px solid #9FD9E9;")
+				a(href="/unit/classroom-example", data-title="Classroom Example", data-nav="/unit/navigation")
+					img(src="/images/classroom-example.png", style="width: 125px")
+			p.home-text(style="padding-left: 95px;")
+				a(href="/unit/classroom-example", data-title="Classroom Example", data-nav="/unit/navigation") Classroom Example
 	
-	.row(style="margin-top: 40px")
-		.col-md-3.col-md-offset-3
+	.row(style="margin-top: 50px; text-align: center;")
+		.col-md-4
 			.home-image
-				a.ajax(href="/unit/languages", data-title="Translations", data-nav="/unit/navigation")
-					img(src="/images/languages.png", style="width: 125px;")
-			p.home-text(style="padding-left:10px;") 
-				a.ajax(href="/unit/languages", data-title="Translations", data-nav="/unit/navigation") Translations
+				a(href="/unit/review-exercises", data-title="Review Exercises", data-nav="/unit/navigation", style="padding-right: 15px;")
+					img(src="/images/review-exercises.png", style="width: 110px")
+			p.home-text(style="padding-left:65px") 
+				a(href="/unit/review-exercises", data-title="Review Exercises", data-nav="/unit/navigation") Review Exercises
 				
-		.col-md-3
+		.col-md-4
 			.home-image
-				a.ajax(href="/manual/source-content", data-title="Source Content", data-nav="/manual/navigation")
-					img(src="/images/ManualIcon.png", style="width: 115px; padding-top: 25px;")
-			p.home-text 
-				a.ajax(href="/manual/source-content", data-title="Source Content", data-nav="/manual/navigation") Lesson Manual
+				a(href="/unit/credits", data-title="Credits", data-nav="/unit/navigation")
+					img(src="/images/credits.png", style="width: 155px")
+			p.home-text(style="padding-left:55px;") 
+				a(href="/unit/credits", data-title="Credits", data-nav="/unit/navigation") Credits
+			
+		.col-md-4
+			.home-image
+				a(href="/unit/languages", data-title="Translations", data-nav="/unit/navigation")
+					img(src="/images/languages.png", style="width: 125px;")
+			p.home-text(style="padding-left:70px") 
+				a(href="/unit/languages", data-title="Translations", data-nav="/unit/navigation") Translations
 	
 				
 	
