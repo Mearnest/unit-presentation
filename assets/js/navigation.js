@@ -49,7 +49,7 @@ $(document).ready(function() {
 	
 	assignAjaxLinks();
 	
-	$("*").draggable(); // All elements on page are draggable
+	// $("*").draggable(); // All elements on page are draggable
 	
 	$('.bxslider').bxSlider({
 		video: true,
