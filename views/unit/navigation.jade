@@ -1,5 +1,48 @@
 link(href="/styles/navigation.css", rel="stylesheet")
 
+style.
+	.navbar-default {
+		background-color: #73BDDB;
+		border-color: transparent;
+		xbackground-image: url('/images/background-nav.png');
+		min-height: 42px;
+		xheight: 42px;
+		padding: 0;
+		margin: 0;
+		z-index: 100;
+	}
+	
+	nav.navbar {
+		display: none;
+	}
+	
+	.navbar-default .navbar-nav > li > a {
+		color: #fff;
+	}
+	
+	@media (max-width: 980px) {
+		ul.button {
+			display: none
+		}
+		
+		nav.navbar {
+			display: block;
+		}
+		
+		iframe {
+			width: 400px;
+			height: 225px;
+		}
+		
+		h1.title {
+			font-size: 30px;
+		}
+		
+		h2.title {
+			font-size: 24px;
+		}
+	}
+
 ul.button
 	li
 		a.ajax(class="large button red", href="/unit/simply-said", data-title="Simply Said") Simply Said
@@ -13,3 +56,32 @@ ul.button
 		a.ajax(class="large button blue", href="/unit/credits", data-title="Credits") Credits
 	li
 		a.ajax(class="large button purple", href="/unit/languages", data-title="Translations") Translations
+	
+
+//- Hidden on larger displays
+nav.navbar.navbar-default(role='navigation')
+	// Brand and toggle get grouped for better mobile display
+	.navbar-header
+		button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+			span.sr-only Toggle navigation
+			span.icon-bar
+			span.icon-bar
+			span.icon-bar
+		
+	// Collect the nav links, forms, and other content for toggling
+	#bs-example-navbar-collapse-1.collapse.navbar-collapse
+		ul.nav.navbar-nav
+			li
+				a.ajax(class="small button red", href="/unit/simply-said", data-title="Simply Said") Simply Said
+			li
+				a.ajax(class="small button orange", href="/unit/text", data-title="Text") Text
+			li
+				a.ajax(class="small button yellow", href="/unit/classroom-example", data-title="Classroom Example") Classroom Example
+			li
+				a.ajax(class="small button green", href="/unit/review-exercises", data-title="Review Exercises") Review Exercises
+			li
+				a.ajax(class="small button blue", href="/unit/credits", data-title="Credits") Credits
+			li
+				a.ajax(class="small button purple", href="/unit/languages", data-title="Translations") Translations
+				
+				

@@ -36,11 +36,11 @@ $(document).ready(function() {
 			});
 		}
 		
-		$("#main .wrapper").fadeOut("fast", function() {
+		$("#main .content").fadeOut("fast", function() {
 			$.get(page + "/ajax", function(data) {
-				$("#main .wrapper").html(data);
+				$("#main .content").html(data);
 				
-				$("#main .wrapper").fadeIn("fast", function() {
+				$("#main .content").fadeIn("fast", function() {
 					// fade in
 				});
 			});
@@ -51,11 +51,6 @@ $(document).ready(function() {
 	
 	// $("*").draggable(); // All elements on page are draggable
 	
-	$('.bxslider').bxSlider({
-		video: true,
-		useCSS: false
-	});
-	
 	// An event that fires when the user hits the browser back, forward or refresh.
 	// This works in conjunction with window.history.pushState.
 	window.onpopstate = function(event) {
@@ -64,6 +59,8 @@ $(document).ready(function() {
 			ajaxCall(document.location, event.state.title);
 		}
 	}
+	
+	// $("*").draggable();
 });
 
 

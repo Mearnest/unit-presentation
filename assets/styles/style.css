@@ -1,7 +1,8 @@
 body {
-	background-image: url('/images/FrontPageBG.png');
-	xbackground-size: cover;
+	background: #93d9f0 url('/images/FrontPageBG.png') no-repeat;
 	overflow-y: scroll;
+	/* position: relative;
+	background-position-y: -60px; */
 }
 
 a:link {
@@ -17,18 +18,13 @@ p.home-text a:hover, p.home-text a.focus {
 	border-bottom: 3px solid gold;
 }
 
-#topbar .container {
-	background-image: url('/images/bfl-logo.png');
-	background-position: 100% 85%;
-	background-repeat: no-repeat;
+#header .container {
+	padding-top: 5px;
 }
 	
 #navigation {
-	margin-top: 25px;
-	margin-bottom: 20px;
-	height: 60px;
-	xbackground-image: url('/images/secondayPageBG.png');
-	xbackground-color: #6FBAD8;
+	margin-top: 29px;
+	height: 42px;
 }
 
 	#navigation img {
@@ -36,44 +32,69 @@ p.home-text a:hover, p.home-text a.focus {
 	}
 	
 #sidebar {
-	background-color: rgba(41,136,173, 0.23 );
+	background-color: rgba(41,136,173, 0.23);
 	-moz-border-radius: 15px;
 	border-radius: 15px;
-	margin-top: 50px;
+	margin-top: 55px;
 	padding-top: 20px;
 	xpadding-left: 0;
 	z-index: 0;
 }
 	
-	#sidebar li {
-		margin: 20px 0;
+	#sidebar li:first-child {
+		margin-bottom: 20px;
 	}
 
-#main {
+#main .content {
 	xborder: 1px solid black;
 }
+
+	#main .content {
+		/* background-color: rgba(41,136,173, 0.23);
+		-moz-border-radius: 15px;
+		border-radius: 15px; */
+	}
 	
 	h1.title {
 		font-family: 'Bree Serif', serif;
 		color: #31859C;
-		font-size: 44px;
-		margin-top: 50px;
+		font-size: 40px;
 	}
 	
 	h2.title {
-		margin-bottom: 1em;
-		color: #C00000;
+		color: #fff;
+		font-family: 'Arvo', serif;
+		font-weight: 400;
+		font-size: 30px;
 	}
+	
+	hr {
+		border: 1px solid #7fc8e4;
+		padding:0;
+		margin: 0 0 20px;
+	}
+	
+	div.toggle {
 
+	}
+	
+	a.toggle {
+		float: right;
+		margin-top: 20px;
+	}
+	
+	h3.title {
+		font-family: 'Bree Serif', serif;
+	}
+	
 	div.home-image {
 		height: 180px;
 	}
 	
 	p.home-text {
 		font-family: 'Bree Serif', serif;
-		font-size: 24px;
+		font-size: 20px;
 		color: #31859C;
-		width: 200px;
 	}
 	
 	p.name {
@@ -83,7 +104,7 @@ p.home-text a:hover, p.home-text a.focus {
 	
 	p.blurb {
 		font-size: 16px;
-		padding: 5px;
+		padding-left: 10px;
 	}
 	
 	.row.sep {
@@ -114,18 +135,54 @@ p.home-text a:hover, p.home-text a.focus {
 	width: 100%;
 }
 
-#footer {
-	position: absolute;
-	bottom: 0;
-	width:100%;
-	display: none;
+
+#header .row, #navigation, #main .row, #footer .row {
+	xborder: 1px dashed red;
 }
 
-#footer .container {
-	height:100px;
+.col-md-1 {
+	xborder: 1px dashed blue;
+}
+
+.col-md-10 {
+	xborder: 1px solid;
 }
 
 .container {
 	xborder: 1px dashed;
-	xbackground-color: #ADE2F4;
+}
+
+/* Sticky footer */
+html, body {
+	height: 100%;
+}
+
+#footer .col-md-10 {
+	/* background-image: url("/images/bfl-logo.png");
+	background-repeat: no-repeat;
+	background-position: 100% 50%; */
+}
+
+#wrapper {
+  min-height: 100%;
+  margin-bottom: -90px; 
+}
+
+#wrapper:after {
+  content: "";
+  display: block;
+}
+
+#footer, #wrapper:after {
+  /* .push must be the same height as footer */
+  height: 90px; 
+}
+
+#footer {
+	width:100%;
+	padding: 12px 0;
+	margin: 10px 0 0;
+	background-color: #7fc8e4;
+	
+	xborder: 1px dashed red;
 }

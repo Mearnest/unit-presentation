@@ -23,7 +23,7 @@
 }
 
 .button li a.active {
-	background-color: lightgray !important;
+	/* background-color: lightgray !important; */
 }
 
 .small.button, .small.button:visited {
@@ -40,7 +40,7 @@
 
 .large.button, .large.button:visited {
 	font-size: 16px;
-	padding: 13px 14px 13px; 
+	padding: 14px 10px 11px; 
 	margin-right: 5px;
 	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
@@ -51,18 +51,80 @@
 	padding: 8px 14px 9px; 
 }
 
-.purple.button, .magenta.button:visited   { background-color: #7D26CD; }
-.purple.button:hover                  { background-color: #551A8B; }
-.green.button, .green.button:visited    { background-color: #91bd09; }
-.green.button:hover                     { background-color: #749a02; }
-.red.button, .red.button:visited        { background-color: #e62727; }
-.red.button:hover                   { background-color: #cf2525; }
-.orange.button, .orange.button:visited  { background-color: #ff5c00; }
-.orange.button:hover                { background-color: #d45500; }
-.blue.button, .blue.button:visited              { background-color: #2981e4; }
-.blue.button:hover                  { background-color: #2575cf; }
-.yellow.button, .yellow.button:visited  { background-color: #ffb515; }
-.yellow.button:hover                { background-color: #fc9200; }
+
+.red.button, .red.button:visited { 
+	background-color: #e62727; 
+}
+.red.button:hover { 
+	background-color: #cf2525; 
+}
+.red.button.active {
+	background-color: #7E230E;
+}
+
+.orange.button, .orange.button:visited { 
+	background-color: #ff5c00; 
+}
+.orange.button:hover { 
+	background-color: #d45500; 
+}
+.orange.button.active { 
+	background-color: #9F5E0A; 
+}
+
+.yellow.button, .yellow.button:visited { 
+	background-color: #ffb515; 
+}
+.yellow.button:hover { 
+	background-color: #fc9200;
+}
+.yellow.button.active { 
+	background-color: #A49A17;
+}
+
+.green.button, .green.button:visited { 
+	background-color: #91bd09; 
+}
+.green.button:hover { 
+	background-color: #749a02; 
+}
+.green.button.active { 
+	background-color: #699C16; 
+}
+
+.blue.button, .blue.button:visited { 
+	background-color: #2981e4 
+}
+.blue.button:hover { 
+	background-color: #2575cf; 
+}
+.blue.button.active { 
+	background-color: #298E9B; 
+}
+
+.purple.button, .magenta.button:visited { 
+	background-color: #7D26CD;
+}
+.purple.button:hover { 
+	background-color: #551A8B; 
+}
+.purple.button.active { 
+	background-color: #4A436A; 
+}
+
+
+
+
+
+
+
+.blue2.button { 
+	background-color: #31859C; 
+}
+.blue2.button:hover { 
+	background-color: #2575cf; 
+}
+
 
 
 /*  Lesson Manual Navigation */

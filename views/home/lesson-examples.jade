@@ -1,64 +1,29 @@
-doctype html
-html(lang="en")
-	head
-		meta(charset="utf-8")
-		//- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-		meta(http-equiv="X-UA-Compatible', content='IE=edge, chrome=1")
-		meta(name="viewport" content="width=device-width, initial-scale=1.0")
-		meta(name="apple-mobile-web-app-capable", content="yes")
-		link(rel="icon", type="image/png", href="/images/favicon.png")
+extends ../layout
+
+block head
+	style.
+		#navigation {
+			display: none;
+		}
 		
-		title Lesson Examples
+		#main {
+			margin-top: 45px;
+		}
+
+block main
+	.col-md-1
+	
+	.col-md-10
+		h2.title Lesson Examples
+		hr
 		
-		//- link(href='http://fonts.googleapis.com/css?family=Bree+Serif,' rel='stylesheet', type='text/css')
-		link(href="/styles/bootstrap.min.css", rel="stylesheet")
-		link(href="/styles/style.css", rel="stylesheet")
-		link(href="/styles/navigation.css", rel="stylesheet")
-		link(href="/styles/jquery.bxslider.css", rel="stylesheet")
-		
-		script(src='http://code.jquery.com/jquery.min.js')
-			script.
-				!window.jQuery && document.write('<script src="/js/jquery.min.js"><\/script>');
-		script(src="http://code.jquery.com/ui/1.10.4/jquery-ui.js")
-		script(src="/js/plugins/jquery.fitvids.js")
-		script(src="/js/jquery.bxslider.min.js")
-		script(src="/js/bootstrap.min.js")
+		include videos
+	
+	.col-md-1
 		
 		
-		//- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
-		//- WARNING: Respond.js doesn't work if you view the page via file:
-		// [if lt IE 9]
-			script(src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js")
-			script(src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js")
-		// [endif]
-		
-		block head
-			//- Add addition stylesheets, scripts, etc.
-		
-	body
-		#topbar
-			.container
-				a(href="/")
-					h1.title Lesson Examples
-						
-		
-		#navigation.container
-			block navigation
-		
-		.container
-			#sidebar.col-md-2
-				ul.button
-					li
-						a(class="large button green", href="/", data-title="Lesson Unit Demo") Lesson Unit Demo >>
-					li
-						a(class="large button purple", href="/lesson-examples", data-title="Lesson Examples") Lesson Examples >>
-					
-			#main.col-md-10
-				.wrapper
-					block main
-						include videos
-		
-		#footer
-			.container
-			
-		
+block footer
+	a(href="/") 
+		img(src="/images/unit-presentation.png")
+	
+	

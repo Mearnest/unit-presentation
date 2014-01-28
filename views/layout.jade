@@ -6,11 +6,11 @@ html(lang="en")
 		meta(http-equiv="X-UA-Compatible', content='IE=edge, chrome=1")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
 		meta(name="apple-mobile-web-app-capable", content="yes")
-		link(rel="icon", type="image/png", href="/images/favicon.png")
+		link(rel="icon", type="image/png", href="/images/favicon_v1.ico")
 		
-		title Unit Presentation
+		title Bridge to Learning
 		
-		//- link(href='http://fonts.googleapis.com/css?family=Bree+Serif,' rel='stylesheet', type='text/css')
+		link(href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css')
 		link(href="/styles/bootstrap.min.css", rel="stylesheet")
 		link(href="/styles/style.css", rel="stylesheet")
 		link(href="/styles/navigation.css", rel="stylesheet")
@@ -37,28 +37,22 @@ html(lang="en")
 			//- Add addition stylesheets, scripts, etc.
 		
 	body
-		#topbar
-			.container
+		#wrapper
+			#header.container
 				a(href="/")
-					h1.title Lesson Unit Demo
+					h1.title Bridge to Learning
+							
+			#navigation.container
+				block navigation
 						
-		
-		#navigation.container
-			block navigation
-		
-		.container
-			#sidebar.col-md-2
-				ul.button
-					li
-						a(class="large button green", href="/", data-title="Lesson Unit Demo") Lesson Unit Demo >>
-					li
-						a(class="large button purple", href="/lesson-examples", data-title="Lesson Examples") Lesson Examples >>
+			#main.container
+				block main
 					
-			#main.col-md-10
-				.wrapper
-					block main
-		
 		#footer
 			.container
-			
+				.col-md-1
+				.col-md-10
+					block footer
+				.col-md-1
+				
 		
