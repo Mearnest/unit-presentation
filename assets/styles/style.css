@@ -186,3 +186,19 @@ html, body {
 	
 	xborder: 1px dashed red;
 }
+
+
+@media (max-height: 800px) {
+	#main {
+		margin-top: 15px !important;
+		xborder: 1px dashed red;
+	}
+	
+	.row.second {
+		margin-top: 10px !important;
+	}
+	
+	#main img {
+		width: 100px !important;
+	}
+}
