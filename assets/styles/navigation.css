@@ -59,7 +59,7 @@
 	background-color: #cf2525; 
 }
 .red.button.active {
-	background-color: #7E230E;
+	background-color: #CD2323;
 }
 
 .orange.button, .orange.button:visited { 
@@ -69,7 +69,7 @@
 	background-color: #d45500; 
 }
 .orange.button.active { 
-	background-color: #9F5E0A; 
+	background-color: #E35105; 
 }
 
 .yellow.button, .yellow.button:visited { 
@@ -79,7 +79,7 @@
 	background-color: #fc9200;
 }
 .yellow.button.active { 
-	background-color: #A49A17;
+	background-color: #E3A01B;
 }
 
 .green.button, .green.button:visited { 
@@ -89,7 +89,7 @@
 	background-color: #749a02; 
 }
 .green.button.active { 
-	background-color: #699C16; 
+	background-color: #80A815; 
 }
 
 .blue.button, .blue.button:visited { 
@@ -99,7 +99,7 @@
 	background-color: #2575cf; 
 }
 .blue.button.active { 
-	background-color: #298E9B; 
+	background-color: #2773C9; 
 }
 
 .purple.button, .magenta.button:visited { 
@@ -109,7 +109,7 @@
 	background-color: #551A8B; 
 }
 .purple.button.active { 
-	background-color: #4A436A; 
+	background-color: #7024B5; 
 }
 
 
