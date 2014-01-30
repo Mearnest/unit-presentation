@@ -15,8 +15,8 @@ $(document).ready(function() {
 				
 				window.history.pushState(objState, title, page);
 				ajaxCall(page, title, navigation);
-			});
-		}
+			}
+		});
 	}
 	
 	function ajaxCall(page, title, navigation, image) {
