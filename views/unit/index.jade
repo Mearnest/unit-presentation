@@ -40,6 +40,26 @@ html(lang="en")
 					margin-top: 10px;
 					xborder: 1px dashed;
 				}
+				
+			script.
+				$(function () {
+					setActivePath();
+				});
+
+				function setActivePath() {
+					var path = window.location.pathname;
+					path = path.replace(/\/$/, "");
+					path = decodeURIComponent(path);
+					
+					$("a.ajax").each(function () {
+						var href = $(this).attr('href');
+						
+						if (path === href) {
+							$(this).addClass('active');
+							return false;
+						}
+					});
+				}
 		
 	body
 		#wrapper
