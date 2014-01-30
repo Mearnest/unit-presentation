@@ -1,19 +1,22 @@
 $(document).ready(function() {
 	function assignAjaxLinks() {
 		$("a.ajax").click(function(event) {
-			event.preventDefault();
-			
-			var page = $(this).attr("href");
-			var title = $(this).attr("data-title");
-			var navigation = $(this).attr("data-nav");
-			var objState = { "title": title, "navigation": navigation }; 
-			
-			$("a.ajax").removeClass("active");
-			$(this).addClass("active");
-			
-			window.history.pushState(objState, title, page);
-			ajaxCall(page, title, navigation);
-		});
+			// If the browser supports pushState, then make the ajax call
+			if (pushState) {
+				event.preventDefault();
+				
+				var page = $(this).attr("href");
+				var title = $(this).attr("data-title");
+				var navigation = $(this).attr("data-nav");
+				var objState = { "title": title, "navigation": navigation }; 
+				
+				$("a.ajax").removeClass("active");
+				$(this).addClass("active");
+				
+				window.history.pushState(objState, title, page);
+				ajaxCall(page, title, navigation);
+			});
+		}
 	}
 	
 	function ajaxCall(page, title, navigation, image) {
