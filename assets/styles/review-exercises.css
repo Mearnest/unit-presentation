@@ -1,0 +1,92 @@
+input[type='radio'], input[type='checkbox'] {
+	margin-right: 10px;
+	padding: 5px;
+}
+
+form.exercises {
+	font-size: 16px;
+}
+
+div.wrapper {
+	margin-top: 20px;
+}
+
+div.question {
+	width: 400px;
+	xborder: 1px dashed;
+	float: left;
+}
+
+div.answer {
+	padding-top: 60px;
+	font-size: 18px;
+	color: darkblue;
+}
+
+div.answer2 {
+	font-size: 18px;
+	color: darkblue;
+}
+
+div.game {
+	width: 600px;
+	height: 330px;
+	background-image: url("/images/exercises/background.png");
+	float: left;
+}
+
+	div.snap {
+		xborder: 1px dashed;
+		height: 120px;
+		position: relative;
+	}
+	
+	div.snap-introduction {
+		left: 40px;
+		top: 102px;
+		width: 122px;
+	}
+	
+	div.snap-new-information {
+		left: 164px;
+		top: -17px;
+		width: 135px;
+	}
+	
+	div.snap-review {
+		left: 298px;
+		top: -139px;
+		width: 120px;
+	}
+	
+	.highlight {
+		border-color: red !important;
+	}
+	
+	.highlight2 {
+		border-color: gold !important;
+	}
+
+.pieces1 {
+	float: left;
+}
+
+	img.train {
+		cursor: pointer;
+		display: block;
+		border-width: 2px;
+		border-style: solid;
+		border-color: transparent;
+	}
+	
+img.train.text {
+	display: none;
+	z-index: 100;
+}
+	
+div.game-answer {
+	font-size: 18px;
+	position: relative;
+	left: 40px;
+	top: -100px;
+}

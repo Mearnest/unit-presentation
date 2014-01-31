@@ -123,6 +123,8 @@ $(document).ready(function() {
 					accept: "img.one-fifth-intro",
 					drop: function( event, ui ) {
 						$(".game-answer").html("Correct! The Introduction is 1/5th of the lesson.");
+						$("img.one-fifth-intro").addClass("highlight2");
+						setTimeout(function() { $("img.one-fifth-intro").removeClass("highlight2"); }, 1200);
 					}
 				});
 
@@ -131,6 +133,8 @@ $(document).ready(function() {
 					accept: "img.three-fifths",
 					drop: function( event, ui ) {
 						$(".game-answer").html("Correct! The New Information is 3/5ths of the lesson time.");
+						$("img.three-fifths").addClass("highlight2");
+						setTimeout(function() { $("img.three-fifths").removeClass("highlight2"); }, 1200);
 					}
 				});
 
@@ -139,6 +143,8 @@ $(document).ready(function() {
 					accept: "img.one-fifth-review",
 					drop: function( event, ui ) {
 						$(".game-answer").html("Correct! The Review is the remaining 1/5th of the lesson.");
+						$("img.one-fifth-review").addClass("highlight2");
+						setTimeout(function() { $("img.one-fifth-review").removeClass("highlight2"); }, 1200);
 					}
 				});
 			}, 2200);
@@ -153,7 +159,8 @@ $(document).ready(function() {
 		accept: "img.introduction",
 		drop: function( event, ui ) {
 			$(".game-answer").html("Correct! First Part of a Lesson is the Introduction.");
-			$(".snap-introduction").addClass("highlight");
+			$("img.introduction").addClass("highlight");
+			setTimeout(function() { $("img.introduction").removeClass("highlight"); }, 1200);
 			checkSnapped();
 		}
 	});
@@ -163,7 +170,8 @@ $(document).ready(function() {
 		accept: "img.new-information",
 		drop: function( event, ui ) {
 			$(".game-answer").html("Correct! Second Part of a Lesson is the New Information.");
-			$(".snap-new-information").addClass("highlight");
+			$("img.new-information").addClass("highlight");
+			setTimeout(function() { $("img.new-information").removeClass("highlight"); }, 1200);
 			checkSnapped();
 		}
 	});
@@ -173,7 +181,8 @@ $(document).ready(function() {
 		accept: "img.review",
 		drop: function( event, ui ) {
 			$(".game-answer").html("Correct! Third Part of a Lesson is the Review.");
-			$(".snap-review").addClass("highlight");
+			$("img.review").addClass("highlight");
+			setTimeout(function() { $("img.review").removeClass("highlight"); }, 1200);
 			checkSnapped();
 		}
 	});
