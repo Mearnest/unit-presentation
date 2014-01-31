@@ -1,47 +1,49 @@
 $(document).ready(function() {
 	function assignAjaxLinks() {
 		$("a.ajax").click(function(event) {
-			event.preventDefault();
-			
-			var page = $(this).attr("href");
-			var title = $(this).attr("data-title");
-			var navigation = $(this).attr("data-nav");
-			var objState = { "title": title, "navigation": navigation }; 
-			
-			$("a.ajax").removeClass("active");
-			$(this).addClass("active");
-			
-			window.history.pushState(objState, title, page);
-			ajaxCall(page, title, navigation);
+			// If the browser supports pushState, then make the ajax call
+			if (window.history.pushState) {
+				event.preventDefault();
+				
+				var page = $(this).attr("href");
+				var title = $(this).attr("data-title");
+				var navigation = $(this).attr("data-nav");
+				var objState = { "title": title, "navigation": navigation }; 
+				
+				$("a.ajax").removeClass("active");
+				$(this).addClass("active");
+				
+				window.history.pushState(objState, title, page);
+				ajaxCall(page, title, navigation);
+			}
 		});
-		
 	}
 	
-	function ajaxCall(page, title, navigation) {
+	function ajaxCall(page, title, navigation, image) {
 		if (navigation) {
-			$("#sidebar").fadeOut("fast", function() {
+			$("#navigation").fadeOut("fast", function() {
 				$.get(navigation + "/ajax", function(data) {
-					bflResizeNavigation();
-					
-					$("#sidebar").html(data);
+					$("#navigation").html(data);
 					$("a.ajax").removeClass("active");
 					$("a.ajax[data-title='" + title + "']").addClass("active");
+					
+					// $("body").css("background-image", "url('/images/secondaryPageBG_v2.png')");
 					
 					// Need to assign click handlers for new content.
 					assignAjaxLinks();
 					
-					$("#sidebar").fadeIn("fast", function() {
+					$("#navigation").fadeIn("fast", function() {
 						// fade in
 					});
 				});
 			});
 		}
 		
-		$("#main .wrapper").fadeOut("fast", function() {
+		$("#main .content").fadeOut("fast", function() {
 			$.get(page + "/ajax", function(data) {
-				$("#main .wrapper").html(data);
+				$("#main .content").html(data);
 				
-				$("#main .wrapper").fadeIn("fast", function() {
+				$("#main .content").fadeIn("fast", function() {
 					// fade in
 				});
 			});
@@ -49,6 +51,8 @@ $(document).ready(function() {
 	}
 	
 	assignAjaxLinks();
+	
+	// $("*").draggable(); // All elements on page are draggable
 	
 	// An event that fires when the user hits the browser back, forward or refresh.
 	// This works in conjunction with window.history.pushState.
@@ -58,6 +62,8 @@ $(document).ready(function() {
 			ajaxCall(document.location, event.state.title);
 		}
 	}
+	
+	// $("*").draggable();
 });
 
 
@@ -69,9 +75,9 @@ function bflResizeNavigation() {
 	$("#main").removeClass("col-md-offset-1");
 	$("#main").addClass("col-md-8");
 	
-	$("#sidebar").removeClass("col-md-1");
-	$("#sidebar").addClass("col-md-offset-1");
-	$("#sidebar").addClass("col-md-3");
+	$("#navigation").removeClass("col-md-1");
+	$("#navigation").addClass("col-md-offset-1");
+	$("#navigation").addClass("col-md-3");
 }
 
 
