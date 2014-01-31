@@ -8,57 +8,185 @@ style.
 		font-size: 16px;
 	}
 	
-	div.question {
+	div.wrapper {
 		margin-top: 20px;
 	}
+	
+	div.question {
+		width: 400px;
+		xborder: 1px dashed;
+		float: left;
+	}
+	
+	div.answer {
+		padding-top: 60px;
+		font-size: 18px;
+		color: darkblue;
+	}
+	
+	div.answer2 {
+		font-size: 18px;
+		color: darkblue;
+	}
+	
+	div.game {
+		width: 600px;
+		height: 330px;
+		background-image: url("/images/exercises/background.png");
+		float: left;
+	}
+	
+		div.snap {
+			xborder: 1px dashed;
+			height: 120px;
+			position: relative;
+		}
+		
+		div.snap-introduction {
+			left: 40px;
+			top: 102px;
+			width: 122px;
+		}
+		
+		div.snap-new-information {
+			left: 164px;
+			top: -17px;
+			width: 135px;
+		}
+		
+		div.snap-review {
+			left: 298px;
+			top: -139px;
+			width: 120px;
+		}
+		
+		.highlight {
+			border: 2px solid red;
+		}
+	
+	.pieces1 {
+		float: left;
+	}
+	
+		img.train {
+			cursor: pointer;
+			display: block;
+		}
+		
+	img.train.text {
+		display: none;
+		z-index: 100;
+	}
+		
+	div.game-answer {
+		height: 80px;
+		margin-top: 20px;
+		width: 600px;
+		font-size: 18px;
+		color: darkblue;
+	}
+	
+script(src="/js/review-exercises.js")
+	
 
 h2.title Review Exercises
 hr
 
 form.exercises
-	div.question
-		h4 How much of the lesson should the introduction take?
-		
-		input(type="radio", name="parts", value="3/5") 
-		| 3/5 <br>
-		input(type="radio", name="parts", value="2/5") 
-		| 2/5 <br>
-		input(type="radio", name="parts", value="4/5") 
-		| 4/5 <br>
-		input(type="radio", name="parts", value="1/5") 
-		| 1/5 <br>
-		
-	div.question
-		h4 What does an introduction provide for a lesson?
-		
-		input(type="checkbox", name="parts", value="direction") 
-		| Direction <br>
-		input(type="checkbox", name="parts", value="vocabulary") 
-		| Vocabulary <br>
-		input(type="checkbox", name="parts", value="focus") 
-		| Focus <br>
-		input(type="checkbox", name="parts", value="review") 
-		| Review <br>
-		
-	div.question
-		h4 Type in what focus helps the teacher avoid:
-		
-		datalist#focus
-			option(value="Distraction")
-			option(value="Firefox")
-			option(value="Chrome")
-			option(value="Capture Interest")
-			option(value="Share Goals")
+	.wrapper.clearfix
+		.question
+			h4 How much of the lesson should the introduction take?
 			
-		input(list="focus")
+			input(type="radio", name="intro", value="3/5") 
+			| 3/5 <br>
+			input(type="radio", name="intro", value="2/5") 
+			| 2/5 <br>
+			input(type="radio", name="intro", value="4/5") 
+			| 4/5 <br>
+			input(type="radio", name="intro", value="1/5") 
+			| 1/5 <br>
+			
+		.answer
 		
-	div.question
-		h4 How do you establish focus and direction?
+	.wrapper.clearfix
+		.question
+			h4 What are the parts to a lesson?
+			
+			input(type="checkbox", name="parts", value="Direction") 
+			| Direction <br>
+			input(type="checkbox", name="parts", value="Vocabulary") 
+			| Vocabulary <br>
+			input(type="checkbox", name="parts", value="Review") 
+			| Review <br>
+			input(type="checkbox", name="parts", value="Venn Diagram") 
+			| Venn Diagram <br>
+			input(type="checkbox", name="parts", value="Introduction") 
+			| Introduction <br>	
+			input(type="checkbox", name="parts", value="New Information") 
+			| New Information <br>
+			input(type="checkbox", name="parts", value="1/5") 
+			| 1/5 <br>
+		.answer
+			
+	
+	.wrapper.clearfix
+		.question2
+			h4 Type in the part of the lesson where the skill or concept is taught.
+			
+			datalist#skill_taught
+				option(value="Distraction")
+				option(value="Firefox")
+				option(value="New Information")
+				option(value="New Vocabulary")
+				option(value="New Smarktopus")
+				option(value="New Review")
+				option(value="New Grudge")
+				option(value="Review")
+				option(value="Introduction")
+				option(value="Smarktopus")
+				option(value="Chrome")
+				option(value="Capture Interest")
+				option(value="Share Goals")
+				option(value="Grudge")
+				
+			input(list="skill_taught", name="skill_taught")
+			input(type="button", value="Check")
 		
-		select(multiple="multiple", size="6")
-			option(value="Chicken Dance") Chicken Dance
-			option(value="Capture Interest") Capture Interest
-			option(value="Venn Diagram") Venn Diagram
-			option(value="Share Goals") Share Goals
-			option(value="Prepare Students") Prepare Students
-			option(value="Activate Schema") Activate Schema
+		.answer2
+		
+	.wrapper.clearfix
+		.question2
+			h4 How does the review help the teacher?
+			
+			select(name="review")
+				option(value="") 
+				option(value="Students Understand") Makes sure the students understood what was taught.
+				option(value="New Vocabulary") New vocabulary can be introduced.
+				option(value="Share Goals") The teacher can share goals.
+				option(value="Prepare Students") The students are prepared.
+				option(value="Activate Schema") It activates the student's schema.
+				option(value="Chicken Dance") A Chicken Dance is performed.
+				
+		.answer2
+		
+	.wrapper.clearfix
+		h4.snap Move the train cars onto the track until they match the 3 parts of the lesson.
+		
+		img.train.text.three-fifths(src="/images/exercises/bird-new-information.png")
+		img.train.text.one-fifth-intro(src="/images/exercises/bird-introduction.png")
+		img.train.text.one-fifth-review(src="/images/exercises/bird-review.png")
+		
+		.game
+			.snap.snap-introduction
+			.snap.snap-new-information
+			.snap.snap-review
+			
+		.pieces1
+			img.train.review(src="/images/exercises/caboose.png")
+			img.train.introduction(src="/images/exercises/engine.png")
+			img.train.new-information(src="/images/exercises/car.png")
+
+		p.clearfix
+		.game-answer
+			
+			

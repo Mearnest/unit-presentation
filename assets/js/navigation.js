@@ -2,7 +2,7 @@ $(document).ready(function() {
 	function assignAjaxLinks() {
 		$("a.ajax").click(function(event) {
 			// If the browser supports pushState, then make the ajax call
-			if (pushState) {
+			if (window.history.pushState) {
 				event.preventDefault();
 				
 				var page = $(this).attr("href");
