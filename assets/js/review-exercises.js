@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	var intro = $('[name="intro"]');
 	var parts = $('[name="parts"]');
+	var partAnswers = [ ];
 	var review = $('[name="review"]');
 	var skillTaught = $('[name="skill_taught"]');
 
@@ -24,14 +25,18 @@ $(document).ready(function() {
 	parts.click(function(event) {
 		var value = $(this).val();
 		var answer;
+		
 		if (value == "Introduction") {
 			answer = "Correct! The Introduction is the first part of the lesson.";
+			partAnswers.push("Introduction");
 		}
 		else if (value == "New Information") {
 			answer = "Right! The New Information is the second part of the lesson.";
+			partAnswers.push("New Information");
 		}
 		else if (value == "Review") {
 			answer = "Good job! The Review is the last part of the lesson.";
+			partAnswers.push("Review");
 		}
 		else if (value == "Venn Diagram") {
 			answer = "Incorrect. Venn Diagram is a strategy.";
@@ -47,6 +52,10 @@ $(document).ready(function() {
 		}
 		
 		$(this).parent().next().html(answer);
+		
+		if (partAnswers.length === 3) {
+			$(this).parent().next().append("<p>&nbsp;</p><p>Conragulations! You have identified the three parts to a lesson: Introduction, New Information and Review.</p>");
+		}
 	});
 	
 	skillTaught.blur(function(event) {

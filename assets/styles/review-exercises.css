@@ -28,6 +28,10 @@ div.answer2 {
 	color: darkblue;
 }
 
+label {
+	cursor: pointer;
+}
+
 div.game {
 	width: 600px;
 	height: 330px;
