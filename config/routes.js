@@ -36,6 +36,10 @@ module.exports.routes = {
 		view: 'home/index',
 	},
 	
+	'/unit-presentation': {
+		view: 'home/unit-presentation',
+	},
+	
 	'/lesson-examples': {
 		view: 'home/lesson-examples',
 	},

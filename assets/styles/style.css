@@ -24,7 +24,7 @@ p.home-text a:hover, p.home-text a.focus {
 }
 	
 #navigation {
-	margin-top: 29px;
+	margin-top: -13px;
 	height: 42px;
 }
 
@@ -60,6 +60,7 @@ p.home-text a:hover, p.home-text a.focus {
 		font-family: 'Bree Serif', serif;
 		color: #31859C;
 		font-size: 40px;
+		position: relative; top: -10px;
 	}
 	
 	h2.title {
@@ -67,6 +68,14 @@ p.home-text a:hover, p.home-text a.focus {
 		font-family: 'Arvo', serif;
 		font-weight: 400;
 		font-size: 30px;
+	}
+				
+	h3.title {
+		color: #559D43;
+		font-style: italic;
+		font-family: Arvo, serif;
+		font-size:20px;
+		position: relative; top: -30px;
 	}
 	
 	hr {
@@ -188,7 +197,7 @@ html, body {
 	xborder: 1px dashed red;
 }
 
-
+/*
 @media (max-height: 800px) {
 	#main {
 		margin-top: 15px !important;
@@ -203,3 +212,4 @@ html, body {
 		width: 100px !important;
 	}
 }
+*/

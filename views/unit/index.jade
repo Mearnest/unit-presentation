@@ -6,14 +6,15 @@ html(lang="en")
 		meta(http-equiv="X-UA-Compatible', content='IE=edge, chrome=1")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
 		meta(name="apple-mobile-web-app-capable", content="yes")
-		link(rel="icon", type="image/png", href="/images/favicon_v1.ico")
+		link(rel="icon", type="image/png", href="/images/favicon_v2.ico")
 		
-		title Lesson Unit Demo
+		title Lesson Unit
 		
 		link(href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css')
 		link(href="/styles/bootstrap.min.css", rel="stylesheet")
 		link(href="/styles/style.css", rel="stylesheet")
 		link(href="/styles/navigation.css", rel="stylesheet")
+		link(href="/styles/print.css", rel="stylesheet", media="print")
 		
 		script(src='http://code.jquery.com/jquery.min.js')
 			script.
@@ -41,6 +42,13 @@ html(lang="en")
 					xborder: 1px dashed;
 				}
 				
+				h3.title {
+					color: #559D43; 
+					font-style: italic;
+					font-family: Arvo, serif; 
+					font-size: 20px;
+				}
+				
 			script.
 				$(function () {
 					setActivePath();
@@ -65,7 +73,8 @@ html(lang="en")
 		#wrapper
 			#header.container
 					a(href="/")
-						h1.title Bridge to Learning
+						h1.title(style="position: relative; top: -10px;") What if we could educate the world?
+						h3.title(style="position: relative; top: -30px;") teachers helping teachers
 							
 			#navigation.container
 				.col-md-1
@@ -104,7 +113,10 @@ html(lang="en")
 						
 				.col-md-10
 					block footer
-						a.pull-left(href="/") 
+						a.pull-left(href="/lesson-examples") 
+							img(src="/images/lesson-examples.png")
+							
+						a.pull-left(href="/unit-presentation") 
 							img.img-responsive(src="/images/unit-presentation.png")
 							
 						a.pull-right(href="/") 
