@@ -1,42 +1,85 @@
-extends ../layout
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		//- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		meta(http-equiv="X-UA-Compatible', content='IE=edge, chrome=1")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(name="apple-mobile-web-app-capable", content="yes")
+		link(rel="icon", type="image/png", href="/images/favicon_v2.ico")
+		
+		title Lesson Unit
+		
+		link(href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css')
+		link(href="/styles/bootstrap.min.css", rel="stylesheet")
+		link(href="/styles/style.css", rel="stylesheet")
+		link(href="/styles/print.css", rel="stylesheet", media="print")
+		
+		script(src='http://code.jquery.com/jquery.min.js')
+			script.
+				!window.jQuery && document.write('<script src="/js/jquery.min.js"><\/script>');
+		script(src="http://code.jquery.com/ui/1.10.4/jquery-ui.js")
+		script(src="/js/navigation.js")
+		script(src="/js/bootstrap.min.js")
+		
+		
+		//- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+		//- WARNING: Respond.js doesn't work if you view the page via file:
+		// [if lt IE 9]
+			script(src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js")
+			script(src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js")
+		// [endif]
+		
+		style.
+			h1.title {
+				text-shadow: 0px 1px 1px #e3fc81;
+				text-align: center;
+				font-size: 58px;
+				margin-top: 80px;
+				line-height: 1.2;
+				color: #1D607F;
+				xfont-weight: 700;
+			}
+			
+			h3.title {
+				color: #559D43;
+				text-align: center;
+				margin-top: 40px;
+			}
+			
+			body {
+				background-image: url('/images/Background.png');
+			}
 
-block head
-	style.
-		#navigation {
-			display: none;
-		}
+body
+	#wrapper
+		#header.container
 		
-		#main {
-			margin-top: 35px;
-		}
-
-block main
-	.col-md-1
-	
-	.col-md-10
-		//h2.title 
-		//hr(style="border: 1px solid #7fc8e4;padding:0;margin:0")
-		
-		.row(style="margin-top: 60px;")
-			.col-md-5
-				.home-image(style="text-align: left; height: 310px;")
-					a(href="/lesson-examples", data-title="Background and Other Examples", style="padding-right: 15px;")
-						img(src="/images/PortalButtons_v2_03.png", style="width: 296px; height: 298px;")
-				p.clearfix.home-text(style="position: relative; left: 15px")
-					a(href="/lesson-examples", data-title="Background and Other Examples") Background and Other Examples
+		#main.container
+			.row
+				h1.title  What if we could<br>educate the <br>world?
 				
-			.col-md-5(style="text-align: right;")
-				.home-image(style="height: 310px")
-					a(href="/unit-presentation", data-title="Unit Presentation")
-						img(src="/images/PortalButtons_v2_05.png", style="width: 300px; height: 298px;")
-				p.home-text(style="text-align: center; padding-left: 65px;")
-					a(href="/unit-presentation", data-title="Unit Presentation") Unit Presentation
+				h3.title Teachers helping teachers.
 				
-	.col-md-1
+			.row(style="margin-top: 60px;")
+				.col-md-3
+				
+				.col-md-3(style="text-align: right")
+					a(href="/lesson-examples")
+						img(src="/images/background-examples-front.png")
+					
+				.col-md-3(style="text-align: left;")
+					a(href="/unit-presentation")
+						img(src="/images/unit-presentation-front.png")
+						
+				.col-md-3
+					
+						
+			
+	#footer
+		.container
+			div(style="text-align: center;")
+				a(href="/")
+					img(src="/images/bfl-logo.png")
 		
-		
-block footer
-	a.pull-right(href="/")
-		img.img-responsive(src="/images/bfl-logo.png")
-	
 	
