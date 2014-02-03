@@ -14,61 +14,29 @@ block main
 	.col-md-1
 	
 	.col-md-10
-		h2.title Unit Presentation
-		hr(style="border: 1px solid #7fc8e4;padding:0;margin:0")
+		//h2.title 
+		//hr(style="border: 1px solid #7fc8e4;padding:0;margin:0")
 		
-		.row(style="margin-top: 20px;")
-			.col-md-4
-				.home-image(style="text-align: left")
-					a(href="/unit/simply-said", data-title="Simply Said", data-nav="/unit/navigation", style="padding-right: 15px;")
-						img(src="/images/simply-said.png")
-				p.home-text(style="position: relative; left: 15px")
-					a(href="/unit/simply-said", data-title="Simply Said", data-nav="/unit/navigation") Simply Said
+		.row(style="margin-top: 60px;")
+			.col-md-5
+				.home-image(style="text-align: left; height: 310px;")
+					a(href="/lesson-examples", data-title="Background and Other Examples", style="padding-right: 15px;")
+						img(src="/images/PortalButtons_v2_03.png")
+				p.clearfix.home-text(style="position: relative; left: 15px")
+					a(href="/lesson-examples", data-title="Background and Other Examples") Background and Other Examples
 				
-			.col-md-4(style="text-align: center")
-				.home-image
-					a(href="/unit/text", data-title="Text", data-nav="/unit/navigation")
-						img(src="/images/text.png")
-				p.home-text
-					a(href="/unit/text", data-title="Text", data-nav="/unit/navigation") Text
+			.col-md-5(style="text-align: right;")
+				.home-image(style="height: 310px")
+					a(href="/unit-presentation", data-title="Unit Presentation")
+						img(src="/images/PortalButtons_v2_05.png")
+				p.home-text(style="text-align: center; padding-left: 65px;")
+					a(href="/unit-presentation", data-title="Unit Presentation") Unit Presentation
 				
-			.col-md-4(style="text-align: right")
-				.home-image
-					a(href="/unit/classroom-example", data-title="Classroom Example", data-nav="/unit/navigation")
-						img(src="/images/classroom-example.png")
-				p.home-text(style="position: relative; right: 10px;")
-					a(href="/unit/classroom-example", data-title="Classroom Example", data-nav="/unit/navigation") Classroom<br>Example
-		
-		.row.second(style="margin-top: 15px;")
-			.col-md-4(style="text-align: left")
-				.home-image
-					a(href="/unit/review-exercises", data-title="Review Exercises", data-nav="/unit/navigation", style="padding-right: 15px;")
-						img(src="/images/review-exercises.png")
-				p.home-text
-					a(href="/unit/review-exercises", data-title="Review Exercises", data-nav="/unit/navigation") Review Exercises
-					
-			.col-md-4(style="text-align: center")
-				.home-image
-					a(href="/unit/credits", data-title="Credits", data-nav="/unit/navigation")
-						img(src="/images/credits.png")
-				p.home-text(style="position: relative;right: 15px;")
-					a(href="/unit/credits", data-title="Credits", data-nav="/unit/navigation") Credits
-				
-			.col-md-4(style="text-align: right")
-				.home-image
-					a(href="/unit/languages", data-title="Translations", data-nav="/unit/navigation")
-						img(src="/images/translations.png")
-				p.home-text
-					a(href="/unit/languages", data-title="Translations", data-nav="/unit/navigation") Translations
-					
 	.col-md-1
 		
 		
 block footer
-	a.pull-left(href="/lesson-examples") 
-		img(src="/images/lesson-examples.png")
-		
-	a.pull-right(href="/") 
+	a.pull-right(href="/")
 		img.img-responsive(src="/images/bfl-logo.png")
 	
 	
