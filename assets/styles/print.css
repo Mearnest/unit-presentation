@@ -5,7 +5,7 @@ h2 {color:#000; font-size:25px; }
 h3 { font-size: 22px; }
 
 /*Image*/
-img, img a {display:none;}
+img, img a, button {display:none;}
 
 .glyphicon, #destination-search { display: none; }
 #header, #navbar, #footer {display: none}

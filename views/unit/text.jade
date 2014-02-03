@@ -9,10 +9,14 @@ style.
 		font-size: 18px;
 		color: #000;
 	}
+	
+	button.btn-info {
+		margin-left: 20px;
+	}
 
 script.
 	$(document).ready(function() {
-		$("span.glyphicon-print").click(function(event) {
+		$("button.btn-info").click(function(event) {
 			window.print();
 		});
 		
@@ -20,7 +24,9 @@ script.
 	});
 	
 
-h2.title Structure of a Lesson <span class="glyphicon glyphicon-print" title="Print Text"></span>
+h2.title Structure of a Lesson 
+	button(type="button" class="btn btn-info") Print
+	
 hr
 
 h3 Three parts of a lesson 
