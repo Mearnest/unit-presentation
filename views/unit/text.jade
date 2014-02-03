@@ -2,11 +2,26 @@ style.
 	#main {
 		line-height: normal;
 	}
+	
+	span.glyphicon-print {
+		cursor: pointer;
+		padding-left: 20px;
+		font-size: 18px;
+		color: #000;
+	}
 
-h2.title Structure of a Lesson
+script.
+	$(document).ready(function() {
+		$("span.glyphicon-print").click(function(event) {
+			window.print();
+		});
+	});
+	
+
+h2.title Structure of a Lesson <span class="glyphicon glyphicon-print" title="Print Text"></span>
 hr
 
-h3 Three parts of a lesson
+h3 Three parts of a lesson 
 p Every lesson, no matter what the subject, should have three (3) parts. These three parts are:
 ul
 	li Introduction
