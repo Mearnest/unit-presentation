@@ -2,16 +2,26 @@ extends ../layout
 
 block head
 	style.
+		body {
+			background-color: #fff;
+			background-image: url('/images/secondaryPageBG.png');
+			background-repeat: repeat-x;
+		}
+		
 		#navigation {
 			display: none;
 		}
 		
 		#main {
-			margin-top: 20px;
+			/* margin-top: 20px; */
 		}
 		
 		#footer {
 			margin-top: 30px;
+		}
+		
+		h2.title {
+			color: #559D43;
 		}
 		
 		a:link {
@@ -103,7 +113,7 @@ block head
 				else {
 					var href = $(this).attr("href");
 					
-					parent.append('<div class="pdf-frame"><iframe width="900" height="510" src="' + href + '?autoplay=1" frameborder="0" allowfullscreen></iframe></div>');
+					parent.append('<div class="pdf-frame"><iframe width="1000" height="560" src="' + href + '?autoplay=1" frameborder="0" allowfullscreen></iframe></div>');
 					span.addClass('glyphicon-eject');
 				}
 			});
@@ -152,7 +162,7 @@ block main
 				p <a class="video principles" data-videoID='UGPLGHBHKtk' href="http://youtu.be/UGPLGHBHKtk"><span class="glyphicon glyphicon-film">&nbsp;</span>Structure of a Lesson (Train) – Spanish translation </a>
 
 			li 
-				p<a class="video principles" data-videoID='tO9jWHVcnbA' href=" http://youtu.be/tO9jWHVcnbA"><span class="glyphicon glyphicon-film">&nbsp;</span>Structure of a Lesson (Squirrel)</a>
+				p<a class="video principles" data-videoID='RhsAyiFzCN8' href=" http://youtu.be/RhsAyiFzCN8"><span class="glyphicon glyphicon-film">&nbsp;</span>Structure of a Lesson (Squirrel)</a>
 
 			li 
 				p <a class="video principles" data-videoID='2L1yR5NGxOA' href="http://youtu.be/2L1yR5NGxOA"><span class="glyphicon glyphicon-film">&nbsp;</span>Importance of Introduction </a>
@@ -188,7 +198,7 @@ block main
 			li 
 				p <a class="video strategies" data-videoID='_Whm7yI5ZKQ' href="http://youtu.be/_Whm7yI5ZKQ"><span class="glyphicon glyphicon-film">&nbsp;</span>How to Teach Numerals (Translations)</a>
 			li 
-				p <a class="video strategies" data-videoID='tWGQnI57cnA' href="http://youtu.be/tWGQnI57cnA"><span class="glyphicon glyphicon-film">&nbsp;</span>Sequencing</a>
+				p <a class="video strategies" data-videoID='7Xtg3nyWVKA' href="http://youtu.be/7Xtg3nyWVKA"><span class="glyphicon glyphicon-film">&nbsp;</span>Sequencing</a>
 
 		p
 		h4 

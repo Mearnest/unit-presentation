@@ -1,5 +1,7 @@
 body {
-	background: #93d9f0 url('/images/FrontPageBG.png') no-repeat;
+	background-color: #93d9f0;
+	background-image: url('/images/FrontPageBG.png');
+	background-repeat: repeat-x;
 	overflow-y: scroll;
 	font-size: 16px;
 	/* position: relative;
@@ -64,7 +66,7 @@ p.home-text a:hover, p.home-text a.focus {
 	}
 	
 	h2.title {
-		color: #fff;
+		color: #559D43;
 		font-family: 'Arvo', serif;
 		font-weight: 400;
 		font-size: 30px;
@@ -175,7 +177,7 @@ html, body {
 
 #wrapper {
   min-height: 100%;
-  margin-bottom: -90px; 
+  margin-bottom: -100px; 
 }
 
 #wrapper:after {
@@ -185,7 +187,8 @@ html, body {
 
 #footer, #wrapper:after {
   /* .push must be the same height as footer */
-  height: 90px; 
+  height: 90px;
+  margin-top: 25px;
 }
 
 #footer {
