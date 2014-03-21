@@ -200,6 +200,104 @@ html, body {
 	xborder: 1px dashed red;
 }
 
+.bfl-logo {
+	margin-top: 10px;
+}
+
+/***		Unit Presentation Buttons		***/
+span.fa {
+	padding-right: 12px;
+	font-size: 28px;
+}
+
+.action-button {
+	display: block;
+	padding: 40px 15px;
+	width: 270px;
+	border-radius: 10px;
+	font-family: 'Arvo', serif;
+	font-size: 20px;
+	color: #FFF;
+	text-decoration: none;	
+}
+
+.action-button:hover, .action-button:focus {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.orange {
+	background-color: #EC721E;
+	border-bottom: 5px solid #A55015;
+	text-shadow: 0px -2px #A55015;
+}
+
+.orange:hover, .orange:focus {
+	background-color: #D88044;
+}
+
+.blue {
+	background-color: #65A1DB;
+	border-bottom: 5px solid #2980B9;
+	text-shadow: 0px -2px #2980B9;
+}
+
+.blue:hover, .blue:focus {
+	background-color: #74AADF;
+}
+
+.yellow {
+	background-color: #EFBC00;
+	border-bottom: 5px solid #A78400;
+	text-shadow: 0px -2px #A78400;
+}
+
+.yellow:hover, .yellow:focus {
+	background-color: #F1C319;
+}
+
+.green {
+	background-color: #64A538;
+	border-bottom: 5px solid #467327;
+	text-shadow: 0px -2px #467327;
+}
+
+.green:hover, .green:focus {
+	background-color: #74AE4C;
+}
+
+.red {
+	background-color: #C00000;
+	border-bottom: 5px solid #860000;
+	text-shadow: 0px -2px #860000;
+}
+
+.red:hover, .red:focus {
+	background-color: #C61919;
+}
+
+.purple {
+	background-color: #5F417F;
+	border-bottom: 5px solid #281C35;
+	text-shadow: 0px -2px #281C35;
+}
+
+.purple:hover, .purple:focus {
+	background-color: #6F548C;
+}
+
+@media (max-width: 1199px) {
+	span.fa {
+		padding-right: 8px;
+		font-size: 24px;
+	}
+	
+	.action-button {
+		font-size: 16px;
+		width: 250px;
+	}
+}
+
 /*
 @media (max-height: 800px) {
 	#main {

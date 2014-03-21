@@ -40,6 +40,10 @@ module.exports.routes = {
 		view: 'home/unit-presentation',
 	},
 	
+	'/unit-presentation-old': {
+		view: 'home/unit-presentation-old',
+	},
+	
 	'/lesson-examples': {
 		view: 'home/lesson-examples',
 	},
