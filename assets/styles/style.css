@@ -448,6 +448,13 @@ span.description {
 	}
 }
 
+@media (max-width: 999px) {
+	.action-button {
+		font-size: 14px;
+		width: 200px;
+	}
+}
+
 
 /***		Tooltip		***/
 .ui-tooltip, .arrow:after {
