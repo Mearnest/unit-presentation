@@ -28,7 +28,7 @@ block head
 			color: #428bca
 		}
 		
-		a:hover, a:focus {
+		a.pdf:hover, a.video:hover, a.pdf:focus, a.video:focus {
 			color: #66ADEB;
 		}
 		
@@ -95,10 +95,10 @@ block main
 	.col-md-1
 	
 	.col-md-10
-		h2.title Background and Examples
+		h2.title Examples
 		hr
 
-		h3 Background Materials
+		h3 Materials
 		p
 
 		h4 What if we could educate the world?
@@ -185,14 +185,7 @@ block main
 	.col-md-1
 	
 block footer
-	a.pull-left.active(href="/lesson-examples") 
-		img(src="/images/lesson-examples.png")
-		
-	a.pull-left(href="/unit-presentation") 
-		img(src="/images/unit-presentation.png")
-		
-	a.pull-right.bfl-logo(href="/") 
-		img.img-responsive(src="/images/bfl-logo.png")
+	include ../footer
 	
 	
 	

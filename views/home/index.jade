@@ -19,9 +19,8 @@ html(lang="en")
 		script(src='http://code.jquery.com/jquery.min.js')
 			script.
 				!window.jQuery && document.write('<script src="/js/jquery.min.js"><\/script>');
-		script(src="http://code.jquery.com/ui/1.10.4/jquery-ui.js")
 		script(src="/js/navigation.js")
-		script(src="/js/bootstrap.min.js")
+		script(src="/js/jquery-ui.custom.min.js")
 		
 		
 		//- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
@@ -61,20 +60,10 @@ body
 				h1.title  What if we could<br>educate the <br>world?
 				h3.title Teachers helping teachers
 				
-			.row(style="margin-top: 60px;")
-				.col-md-3
+			.row(style="margin-top: 60px; text-align:center")
+				a.lesson-button(href="/lesson-examples", style="margin-right: 25px") Example List
 				
-				.col-md-3(style="text-align: right")
-					a(href="/lesson-examples")
-						img(src="/images/background-examples-front.png")
-					
-				.col-md-3(style="text-align: left;")
-					a(href="/unit-presentation")
-						img(src="/images/unit-presentation-front.png")
-						
-				.col-md-3
-					
-						
+				a.lesson-button(href="/unit-presentation", style="margin-left: 25px") Lesson Example			
 			
 	#footer
 		.container

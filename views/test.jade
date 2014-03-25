@@ -1,87 +1,35 @@
-doctype html
-html(lang="en")
-	head
-		meta(charset="utf-8")
-		//- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-		meta(http-equiv="X-UA-Compatible', content='IE=edge, chrome=1")
-		meta(name="viewport" content="width=device-width, initial-scale=1.0")
-		meta(name="apple-mobile-web-app-capable", content="yes")
-		link(rel="icon", type="image/png", href="/images/favicon_v2.ico")
+extends layout
+
+block head
+	style.
+		p.blurb {
+			
+		}
 		
-		title What if we could education the World?
+	script.
+		$(function() {
+			
+		});
+
+block main
+	h1.title  What if we could<br>educate the <br>world?
+	h3.title Teachers helping teachers
+	
+	.row(style="margin-top: 60px;")
+		.col-md-3
 		
-		link(href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css')
-		link(href='http://fonts.googleapis.com/css?family=Bree+Serif', rel='stylesheet', type='text/css')
-		link(href="/styles/bootstrap.min.css", rel="stylesheet")
-		link(href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet")
-		link(href="/styles/style-alt.css", rel="stylesheet")
-		link(href="/styles/navigation.css", rel="stylesheet")
-		link(href="/styles/jquery.bxslider.css", rel="stylesheet")
-		
-		script(src='http://code.jquery.com/jquery.min.js')
-			script.
-				!window.jQuery && document.write('<script src="/js/jquery.min.js"><\/script>');
-		script(src="http://code.jquery.com/ui/1.10.4/jquery-ui.js")
-		script(src="/js/plugins/jquery.fitvids.js")
-		script(src="/js/jquery.bxslider.min.js")
-		script(src="/js/navigation.js")
-		script(src="/js/bootstrap.min.js")
-		
-		
-		//- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
-		//- WARNING: Respond.js doesn't work if you view the page via file:
-		// [if lt IE 9]
-			script(src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js")
-			script(src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js")
-		// [endif]
-		
-		block head
-			//- Add addition stylesheets, scripts, etc.
-		
-	body
-		#wrapper
-			#header.container
+		.col-md-3(style="text-align: right")
+			a(href="/lesson-examples")
+				img(src="/images/background-examples-front.png")
+			
+		.col-md-3(style="text-align: left;")
+			a(href="/unit-presentation")
+				img(src="/images/unit-presentation-front.png")
+					
+block footer
+		.container
+			div(style="text-align: center;")
 				a(href="/")
-					h1.title What if we could educate the world?
-					h3.title teachers helping teachers
-						
-			#main.container
-				.col-md-1
-				
-				.col-md-10
-					h2.title Lesson Components
-					hr(style="border: 1px solid #7fc8e4;padding:0;margin:0")
-					
-					.row(style="margin-top: 60px;")
-						.col-md-4
-							a.action-button.orange(href="/unit/simply-said")
-								span.fa.fa-youtube-play
-								| Animated Video
-							
-						.col-md-4
-							a.action-button.blue(href="/unit/classroom-example")
-								span.fa.fa-list-alt
-								| Corresponding Text
-							
-						.col-md-4
-							a.action-button.yellow(href="/unit/text")
-								span.fa.fa-video-camera 
-								| Classroom Example
-								
-				.col-md-1
-					
-		#footer
-			.container
-				.col-md-1
-				.col-md-10
-					a.pull-left(href="/lesson-examples") 
-						img(src="/images/lesson-examples.png")
-						
-					a.pull-left.active(href="/unit-presentation") 
-						img(src="/images/unit-presentation.png")
-						
-					a.pull-right(href="/") 
-						img.img-responsive.bfl-logo(src="/images/bfl-logo.png")
-				.col-md-1
-				
-		
+					img.bfl-logo(src="/images/bfl-logo.png")
+
+	

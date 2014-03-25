@@ -10,59 +10,84 @@ block head
 			margin-top: 20px;
 		}
 		
-		a:hover {
-			color: green;
+		h3.title {
+				color: #559D43;
+				margin-top: 40px;
+			}
+		
+		a.action-button {
+			color: #FFF;
 		}
+		
+		a.action-button:visited {
+			color: #FFF;
+		}
+		
+	script.
+		$(document).ready(function() {
+			// $("a.action-button").tooltip();
+		});
 
 block main
 	.col-md-1
 	
 	.col-md-10
-		h2.title Lesson Components
+		h2.title Sample Lesson: Importance of Introduction
 		hr(style="border: 1px solid #7fc8e4;padding:0;margin:0")
 		
 		.row(style="margin-top: 40px;")
 			.col-md-4
-				a(href="/unit/simply-said", data-title="Simply Said", data-nav="/unit/navigation", class="action-button shadow animate orange")
+				a(href="/unit/simply-said", title="Animated Video description goes here (maybe).", class="action-button shadow animate orange")
 					span.fa.fa-youtube-play
+					br
 					| Animated Video
+					br
+					span.description Animated Video description goes here. Blah blah smarktopus.
 				
 			.col-md-4
-				a(href="/unit/text", data-title="Text", data-nav="/unit/navigation", class="action-button shadow animate blue") 
+				a(href="/unit/text", title="Corresponding text description description goes here.", class="action-button shadow animate blue") 
 					span.fa.fa-list-alt
+					br
 					| Corresponding Text
+					br
+					span.description Corresponding Text goes here.
 				
 			.col-md-4
-				a(href="/unit/classroom-example", data-title="Classroom Example", data-nav="/unit/navigation", class="action-button shadow animate yellow") 
-					span.fa.fa-video-camera 
+				a(href="/unit/classroom-example", title="Classroom Example description goes here.", class="action-button shadow animate yellow") 
+					span.fa.fa-video-camera
+					br
 					| Classroom Example
+					br
+					span.description Classroom Example description goes here.
 		
 		.row.second(style="margin-top: 40px;")
 			.col-md-4
-				a(href="/unit/review-exercises", data-title="Review Exercises", data-nav="/unit/navigation", class="action-button shadow animate green")
+				a(href="/unit/review-exercises", data-title="Review Exercises description goes here.", class="action-button shadow animate green")
 					span.fa.fa-pencil-square-o
+					br
 					| Review Exercises
+					br
+					span.description Review Exercises description goes here.
 					
 			.col-md-4
-				a(href="/unit/credits", data-title="Credits", data-nav="/unit/navigation", class="action-button shadow animate red") 
+				a(href="/unit/credits", data-title="Team Credits description goes here.", class="action-button shadow animate red") 
 					span.fa.fa-user
+					br
 					| Team Credits
+					br
+					span.description Team Credits description goes here.
 				
 			.col-md-4
-				a(href="/unit/languages", data-title="Translations", data-nav="/unit/navigation", class="action-button shadow animate purple")
+				a(href="/unit/languages", data-title="Translated Video description goes here.", class="action-button shadow animate purple")
 					span.fa.fa-comments
+					br
 					| Translated Video
+					br
+					span.description Translated Video description goes here.
 					
 	.col-md-1
 		
 		
 block footer
-	a.pull-left(href="/lesson-examples") 
-		img(src="/images/lesson-examples.png")
-		
-	a.pull-left.active(href="/unit-presentation") 
-		img(src="/images/unit-presentation.png")
-		
-	a.pull-right(href="/") 
-		img.img-responsive(src="/images/bfl-logo.png")
+	include ../footer
 	
