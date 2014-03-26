@@ -456,6 +456,30 @@ span.description {
 }
 
 
+/***		Collage		***/
+.collage {
+    padding:10px;
+}
+
+.collage img {
+    vertical-align: bottom;
+    opacity: 0;
+}
+
+.collage-image {
+  display: inline-block;
+  
+  margin: 10px;
+  padding: 5px;
+  
+  border: 10px solid white;
+
+  -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px#888;
+  box-shadow: 0 0 5px #888;
+}
+
+
 /***		Tooltip		***/
 .ui-tooltip, .arrow:after {
     background: black;
