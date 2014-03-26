@@ -74,10 +74,15 @@ p.home-text a:hover, p.home-text a.focus {
 				
 	h3.title {
 		color: #559D43;
-		font-style: italic;
 		font-family: Arvo, serif;
 		font-size:20px;
 		position: relative; top: -30px;
+	}
+	
+	h4.blurb {
+		text-align: center;
+		font-family: 'Bree Serif', serif;
+		margin-top: -20px;
 	}
 	
 	hr {
@@ -237,50 +242,6 @@ html, body {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77BDD7), color-stop(1, #81CAE3));
 }
 
-.lesson-front {
-	background: linear-gradient(to bottom, #81CAE3 5%, #77BDD7 100%);
-	background: -o-linear-gradient(to bottom, #81CAE3 5%, #77BDD7 100%);
-	background: -moz-linear-gradient(to bottom, #81CAE3 5%, #77BDD7 100%);
-	background: -webkit-linear-gradient(to bottom, #81CAE3 5%, #77BDD7 100%);
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #81CAE3), color-stop(1, #77BDD7));
-	border-bottom: 5px solid #2980B9;
-	text-shadow: 0px -2px #2980B9;
-	color: #295F73;
-	width: 220px;
-	height: 110px;
-}
-
-.lesson-front:hover, .lesson-front:focus {
-	background: linear-gradient(to bottom, #81CAE3 5%, #77BDD7 100%);
-	background: -o-linear-gradient(to bottom, #81CAE3 5%, #77BDD7 100%);
-	background: -moz-linear-gradient(to bottom, #81CAE3 5%, #77BDD7 100%);
-	background: -webkit-linear-gradient(to bottom, #81CAE3 5%, #77BDD7 100%);
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #81CAE3), color-stop(1, #77BDD7));
-	color: #295F73;
-}
-
-.lesson-top {
-	background: linear-gradient(to bottom, #dbf089 5%, #bfd275 100%);
-	background: -o-linear-gradient(to bottom, #dbf089 5%, #bfd275 100%);
-	background: -moz-linear-gradient(to bottom, #dbf089 5%, #bfd275 100%);
-	background: -webkit-linear-gradient(to bottom, #dbf089 5%, #bfd275 100%);
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dbf089), color-stop(1, #bfd275));
-	border-bottom: 5px solid #2980B9;
-	text-shadow: 0px -2px #2980B9;
-	color: #295F73;
-	width: 220px;
-	height: 110px;
-}
-
-.lesson-top:hover, .lesson-top:focus {
-	background: linear-gradient(to bottom, #bfd275 5%, #dbf089  100%);
-	background: -o-linear-gradient(to bottom, #bfd275 5%, #dbf089  100%);
-	background: -moz-linear-gradient(to bottom, #bfd275 5%, #dbf089  100%);
-	background: -webkit-linear-gradient(to bottom, #bfd275 5%, #dbf089  100%);
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bfd275), color-stop(1, #dbf089 ));
-	color: #295F73;
-}
-
 span.fa {
 	padding-right: 12px;
 	font-size: 38px;
@@ -290,8 +251,8 @@ span.description {
 	font-size: 12px;
 	font-family: 'Verdana', sans-serif;
 	display: block;
-	font-style: italic;
 	line-height: 120%;
+	text-shadow: none;
 }
 
 .action-button {
