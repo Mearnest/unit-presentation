@@ -1,24 +1,13 @@
+html, body {
+	height: 100%;
+}
+
 body {
 	background-color: #93d9f0;
-	background-image: url('/images/FrontPageBG.png');
+	background-image: url('/images/background.png');
 	background-repeat: repeat-x;
 	overflow-y: scroll;
 	font-size: 16px;
-	/* position: relative;
-	background-position-y: -60px; */
-}
-
-a:link {
-	color: inherit;
-	text-decoration: none;
-}
-
-a.active img.process {
-	background-color: red;
-}
-
-p.home-text a:hover, p.home-text a.focus {
-	border-bottom: 3px solid gold;
 }
 
 #header .container {
@@ -26,158 +15,8 @@ p.home-text a:hover, p.home-text a.focus {
 }
 	
 #navigation {
-	margin-top: -13px;
+	margin: -13px auto 20px;
 	height: 42px;
-}
-
-	#navigation img {
-		height: 48px;
-	}
-	
-#sidebar {
-	background-color: rgba(41,136,173, 0.23);
-	-moz-border-radius: 15px;
-	border-radius: 15px;
-	margin-top: 55px;
-	padding-top: 20px;
-	xpadding-left: 0;
-	z-index: 0;
-}
-	
-	#sidebar li:first-child {
-		margin-bottom: 20px;
-	}
-
-#main .content {
-	xborder: 1px solid black;
-}
-
-	#main .content {
-		/* background-color: rgba(41,136,173, 0.23);
-		-moz-border-radius: 15px;
-		border-radius: 15px; */
-	}
-	
-	h1.title {
-		font-family: 'Bree Serif', serif;
-		color: #31859C;
-		font-size: 40px;
-		position: relative; top: -10px;
-	}
-	
-	h2.title {
-		color: #559D43;
-		font-family: 'Arvo', serif;
-		font-weight: 400;
-		font-size: 30px;
-	}
-				
-	h3.title {
-		color: #559D43;
-		font-family: Arvo, serif;
-		font-size:20px;
-		position: relative; top: -30px;
-	}
-	
-	h4.blurb {
-		text-align: center;
-		font-family: 'Bree Serif', serif;
-		margin-top: -20px;
-	}
-	
-	hr {
-		border: 1px solid #7fc8e4;
-		padding:0;
-		margin: 0 0 20px;
-	}
-	
-	div.toggle {
-
-	}
-	
-	a.toggle {
-		float: right;
-		margin-top: 20px;
-	}
-	
-	h3.title {
-		font-family: 'Bree Serif', serif;
-	}
-	
-	div.home-image {
-		height: 140px;
-	}
-	
-	p.home-text {
-		font-family: 'Bree Serif', serif;
-		font-size: 20px;
-		color: #31859C;
-	}
-	
-	p.name {
-		font-size: 24px;
-		margin-top: 10px;
-	}
-	
-	p.blurb {
-		font-size: 16px;
-		padding-left: 10px;
-	}
-	
-	.row.sep {
-		border-top: 2px dashed gray; 
-		margin-top: 10px;
-		padding-top: 25px;
-	}
-	
-	ul.main {
-		margin-top: 20px;
-	}
-	
-	ul.main li {
-		margin: 5px 0;
-	}
-	
-	ul.bxslide {
-		background-color: #DCF3FB;
-	}
-	
-	div.video {
-		margin-bottom: 10px;
-	}
-	
-#bottom {
-	position: absolute;
-	bottom: 75px;
-	width: 100%;
-}
-
-
-#header .row, #navigation, #main .row, #footer .row {
-	xborder: 1px dashed red;
-}
-
-.col-md-1 {
-	xborder: 1px dashed blue;
-}
-
-.col-md-10 {
-	xborder: 1px solid;
-}
-
-.container {
-	xborder: 1px dashed;
-}
-
-/* Sticky footer */
-html, body {
-	height: 100%;
-}
-
-#footer .col-md-10 {
-	/* background-image: url("/images/bfl-logo.png");
-	background-repeat: no-repeat;
-	background-position: 100% 50%; */
 }
 
 #wrapper {
@@ -201,19 +40,71 @@ html, body {
 	padding: 12px 0;
 	margin: 10px 0 0;
 	background-color: #7fc8e4;
+}
+
+	#footer img.logo {
+		margin-top: 10px;
+	}
 	
-	xborder: 1px dashed red;
+
+h1.title {
+	font-family: 'Bree Serif', serif;
+	color: #31859C;
+	font-size: 40px;
+	position: relative; 
+	top: -10px;
+}
+	
+h2.title, h3.title {
+	color: #559D43;
+	font-family: 'Arvo', serif;
 }
 
-.bfl-logo {
-	margin-top: 10px;
+h2.title {
+	font-weight: 400;
+	font-size: 30px;
+}
+			
+h3.title {
+	font-size: 20px;
+	position: relative; top: -30px;
 }
 
-#gallery {
-	margin-top: 25px;
+hr {
+	border: 1px solid #7fc8e4;
+	margin: 0 0 20px;
+	padding:0;
 }
 
-/***		Lesson Buttons		***/
+a:hover {
+	text-decoration: none;
+}
+
+a.pdf:hover, a.video:hover, a.pdf:focus, a.video:focus {
+	color: #66ADEB;
+}
+
+a.video, a.pdf {
+	padding-left: 10px;
+	font-family: 'Arvo', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+div.video-frame, div.pdf-frame {
+	margin-top: 5px;
+}
+
+img a:focus {
+ 	outline : none;
+ 	border: none; 
+}
+
+.highlight {
+	background-color: #A78400;
+}
+
+/***	Buttons		***/
 .lesson-button {
 	display: inline-block;
 	width: 220px;
@@ -242,19 +133,6 @@ html, body {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77BDD7), color-stop(1, #81CAE3));
 }
 
-span.fa {
-	padding-right: 12px;
-	font-size: 38px;
-}
-
-span.description {
-	font-size: 12px;
-	font-family: 'Verdana', sans-serif;
-	display: block;
-	line-height: 120%;
-	text-shadow: none;
-}
-
 .action-button {
 	display: block;
 	padding: 20px 15px;
@@ -273,17 +151,22 @@ span.description {
 	text-decoration: none;
 }
 
+	span.fa {
+		padding-right: 12px;
+		font-size: 38px;
+	}
+
+	span.description {
+		font-size: 12px;
+		font-family: 'Verdana', sans-serif;
+		display: block;
+		line-height: 120%;
+		text-shadow: none;
+	}
+
 .orange {
-	background: linear-gradient(to bottom, #e66c18 5%, #f28b51 100%);
-	background: -o-linear-gradient(to bottom, #e66c18 5%, #f28b51 100%);
-	background: -moz-linear-gradient(to bottom, #e66c18 5%, #f28b51 100%);
-	background: -webkit-linear-gradient(to bottom, #e66c18 5%, #f28b51 100%);
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e66c18), color-stop(1, #f28b51));
 	border-bottom: 5px solid #A55015;
 	text-shadow: 0px -2px #A55015;
-}
-
-.orange:hover, .orange:focus {
 	background: linear-gradient(to bottom, #f28b51 5%, #e66c18 100%);
 	background: -o-linear-gradient(to bottom, #f28b51 5%, #e66c18 100%);
 	background: -moz-linear-gradient(to bottom, #f28b51 5%, #e66c18 100%);
@@ -291,26 +174,34 @@ span.description {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f28b51), color-stop(1, #e66c18));
 }
 
+.orange:hover, .orange:focus {
+	background: linear-gradient(to bottom, #e66c18 5%, #f28b51 100%);
+	background: -o-linear-gradient(to bottom, #e66c18 5%, #f28b51 100%);
+	background: -moz-linear-gradient(to bottom, #e66c18 5%, #f28b51 100%);
+	background: -webkit-linear-gradient(to bottom, #e66c18 5%, #f28b51 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e66c18), color-stop(1, #f28b51));
+}
+
 .orange:active {
-	
+
 }
 
 .blue {
+	border-bottom: 5px solid #2980B9;
+	text-shadow: 0px -2px #2980B9;
+	background: linear-gradient(to bottom, #6fa5db 5%, #448bca 100%);
+	background: -o-linear-gradient(to bottom, #6fa5db 5%, #448bca 100%);
+	background: -moz-linear-gradient(to bottom, #6fa5db 5%, #448bca 100%);
+	background: -webkit-linear-gradient(to bottom, #6fa5db 5%, #448bca 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6fa5db), color-stop(1, #448bca));
+}
+
+.blue:hover, .blue:focus {
 	background: linear-gradient(to bottom, #448bca 5%, #6fa5db 100%);
 	background: -o-linear-gradient(to bottom, #448bca 5%, #6fa5db 100%);
 	background: -moz-linear-gradient(to bottom, #448bca 5%, #6fa5db 100%);
 	background: -webkit-linear-gradient(to bottom, #448bca 5%, #6fa5db 100%);
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #448bca), color-stop(1, #6fa5db));
-	border-bottom: 5px solid #2980B9;
-	text-shadow: 0px -2px #2980B9;
-}
-
-.blue:hover, .blue:focus {
-	background: linear-gradient(to bottom, #6fa5db 5%, #448bca 100%);
-	background: -o-linear-gradient(to bottom, #6fa5db 5%, #448bca 100%);
-	background: -moz-linear-gradient(to bottom, #6fa5db 5%, #448bca 100%);
-	background: -webkit-linear-gradient(to bottom, #6fa5db 5%, #448bca 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6fa5db), color-stop(1, #448bca));
 }
 
 .blue:active {
@@ -318,16 +209,8 @@ span.description {
 }
 
 .yellow {
-	background: linear-gradient(to bottom, #e6b700 5%, #ffc742 100%);
-	background: -o-linear-gradient(to bottom, #e6b700 5%, #ffc742 100%);
-	background: -moz-linear-gradient(to bottom, #e6b700 5%, #ffc742 100%);
-	background: -webkit-linear-gradient(to bottom, #e6b700 5%, #ffc742 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e6b700), color-stop(1, #ffc742));
 	border-bottom: 5px solid #A78400;
 	text-shadow: 0px -2px #A78400;
-}
-
-.yellow:hover, .yellow:focus {
 	background: linear-gradient(to bottom, #ffc742 5%, #e6b700 100%);
 	background: -o-linear-gradient(to bottom, #ffc742 5%, #e6b700 100%);
 	background: -moz-linear-gradient(to bottom, #ffc742 5%, #e6b700 100%);
@@ -335,26 +218,35 @@ span.description {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e6b700), color-stop(1, #e6b700));
 }
 
+.yellow:hover, .yellow:focus {
+	background: linear-gradient(to bottom, #e6b700 5%, #ffc742 100%);
+	background: -o-linear-gradient(to bottom, #e6b700 5%, #ffc742 100%);
+	background: -moz-linear-gradient(to bottom, #e6b700 5%, #ffc742 100%);
+	background: -webkit-linear-gradient(to bottom, #e6b700 5%, #ffc742 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e6b700), color-stop(1, #ffc742));
+}
+
 .yellow:active {
 	
 }
 
 .green {
-	background: linear-gradient(to bottom, #62a336 5%, #80b85f 100%);
-	background: -o-linear-gradient(to bottom, #62a336 5%, #80b85f 100%);
-	background: -moz-linear-gradient(to bottom, #62a336 5%, #80b85f 100%);
-	background: -webkit-linear-gradient(to bottom, #62a336 5%, #80b85f 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #62a336), color-stop(1, #80b85f));
-	border-bottom: 5px solid #467327;
-	text-shadow: 0px -2px #467327;
-}
-
-.green:hover, .green:focus {
 	background: linear-gradient(to bottom, #80b85f 5%, #62a336 100%);
 	background: -o-linear-gradient(to bottom, #80b85f 5%, #62a336 100%);
 	background: -moz-linear-gradient(to bottom, #80b85f 5%, #62a336 100%);
 	background: -webkit-linear-gradient(to bottom, #80b85f 5%, #62a336 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #80b85f ), color-stop(1, #62a336));
+
+	border-bottom: 5px solid #467327;
+	text-shadow: 0px -2px #467327;
+}
+
+.green:hover, .green:focus {
+	background: linear-gradient(to bottom, #62a336 5%, #80b85f 100%);
+	background: -o-linear-gradient(to bottom, #62a336 5%, #80b85f 100%);
+	background: -moz-linear-gradient(to bottom, #62a336 5%, #80b85f 100%);
+	background: -webkit-linear-gradient(to bottom, #62a336 5%, #80b85f 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #62a336), color-stop(1, #80b85f));
 }
 
 .green:active {
@@ -362,16 +254,8 @@ span.description {
 }
 
 .red {
-	background: linear-gradient(to bottom, #C00000 5%, #E95050 100%);
-	background: -o-linear-gradient(to bottom, #C00000 5%, #E95050 100%);
-	background: -moz-linear-gradient(to bottom, #C00000 5%, #E95050 100%);
-	background: -webkit-linear-gradient(to bottom, #C00000 5%, #E95050 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #C00000 ), color-stop(1, #E95050));
 	border-bottom: 5px solid #860000;
 	text-shadow: 0px -2px #860000;
-}
-
-.red:hover, .red:focus {
 	background: linear-gradient(to bottom, #E95050 5%, #C00000 100%);
 	background: -o-linear-gradient(to bottom, #E95050 5%, #C00000 100%);
 	background: -moz-linear-gradient(to bottom, #E95050 5%, #C00000 100%);
@@ -379,17 +263,17 @@ span.description {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #E95050), color-stop(1, #C00000));
 }
 
-.purple {
-	background: linear-gradient(to bottom, #5f417f 5%, #735494 100%);
-	background: -o-linear-gradient(to bottom, #5f417f 5%, #735494 100%);
-	background: -moz-linear-gradient(to bottom, #5f417f 5%, #735494 100%);
-	background: -webkit-linear-gradient(to bottom, #5f417f 5%, #735494 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5f417f), color-stop(1, #735494));
-	border-bottom: 5px solid #281C35;
-	text-shadow: 0px -2px #281C35;
+.red:hover, .red:focus {
+	background: linear-gradient(to bottom, #C00000 5%, #E95050 100%);
+	background: -o-linear-gradient(to bottom, #C00000 5%, #E95050 100%);
+	background: -moz-linear-gradient(to bottom, #C00000 5%, #E95050 100%);
+	background: -webkit-linear-gradient(to bottom, #C00000 5%, #E95050 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #C00000 ), color-stop(1, #E95050));
 }
 
-.purple:hover, .purple:focus {
+.purple {
+	border-bottom: 5px solid #281C35;
+	text-shadow: 0px -2px #281C35;
 	background: linear-gradient(to bottom, #735494 5%, #5f417f 100%);
 	background: -o-linear-gradient(to bottom, #735494 5%, #5f417f 100%);
 	background: -moz-linear-gradient(to bottom, #735494 5%, #5f417f 100%);
@@ -397,100 +281,10 @@ span.description {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #735494), color-stop(1, #5f417f));
 }
 
-@media (max-width: 1199px) {
-	span.fa {
-		padding-right: 8px;
-		font-size: 24px;
-	}
-	
-	.action-button {
-		font-size: 16px;
-		width: 250px;
-	}
+.purple:hover, .purple:focus {
+	background: linear-gradient(to bottom, #5f417f 5%, #735494 100%);
+	background: -o-linear-gradient(to bottom, #5f417f 5%, #735494 100%);
+	background: -moz-linear-gradient(to bottom, #5f417f 5%, #735494 100%);
+	background: -webkit-linear-gradient(to bottom, #5f417f 5%, #735494 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5f417f), color-stop(1, #735494));
 }
-
-@media (max-width: 999px) {
-	.action-button {
-		font-size: 14px;
-		width: 200px;
-	}
-}
-
-
-/***		Collage		***/
-.collage {
-    padding:10px;
-}
-
-.collage img {
-    vertical-align: bottom;
-    opacity: 0;
-}
-
-.collage-image {
-  display: inline-block;
-  
-  margin: 10px;
-  padding: 5px;
-  
-  border: 10px solid white;
-
-  -moz-box-shadow: 0 0 5px #888;
-  -webkit-box-shadow: 0 0 5px#888;
-  box-shadow: 0 0 5px #888;
-}
-
-
-/***		Tooltip		***/
-.ui-tooltip, .arrow:after {
-    background: black;
-    border: 2px solid white;
-  }
-  
-  .ui-tooltip {
-    padding: 10px 20px;
-    color: white;
-    border-radius: 20px;
-    font: bold 14px "Helvetica Neue", Sans-Serif;
-    text-transform: uppercase;
-    box-shadow: 0 0 7px black;
-  }
-  
-  .arrow {
-    width: 70px;
-    height: 16px;
-    overflow: hidden;
-    position: absolute;
-    left: 50%;
-    margin-left: -35px;
-    bottom: -16px;
-  }
-  
-  .arrow.top {
-    top: -16px;
-    bottom: auto;
-  }
-  
-  .arrow.left {
-    left: 20%;
-  }
-  
-  .arrow:after {
-    content: "";
-    position: absolute;
-    left: 20px;
-    top: -20px;
-    width: 25px;
-    height: 25px;
-    box-shadow: 6px 5px 9px -9px black;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    tranform: rotate(45deg);
-  }
-  
-  .arrow.top:after {
-    bottom: -20px;
-    top: auto;
-  }
