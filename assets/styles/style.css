@@ -76,7 +76,7 @@ hr {
 	padding:0;
 }
 
-a:hover {
+a:hover, a:focus {
 	text-decoration: none;
 }
 
@@ -118,6 +118,7 @@ img a:focus {
 	text-decoration: none;	
 	text-align: center;
 	color: #295F73;
+	background-color: #81CAE3;
 	background: linear-gradient(to bottom, #81CAE3 5%, #77BDD7 100%);
 	background: -o-linear-gradient(to bottom, #81CAE3 5%, #77BDD7 100%);
 	background: -moz-linear-gradient(to bottom, #81CAE3 5%, #77BDD7 100%);
@@ -126,6 +127,7 @@ img a:focus {
 }
 
 .lesson-button:hover, .lesson-button:focus {
+	background-color: #77BDD7;
 	background: linear-gradient(to bottom, #77BDD7 5%, #81CAE3 100%);
 	background: -o-linear-gradient(to bottom, #77BDD7 5%, #81CAE3 100%);
 	background: -moz-linear-gradient(to bottom, #77BDD7 5%, #81CAE3 100%);
@@ -167,6 +169,7 @@ img a:focus {
 .orange {
 	border-bottom: 5px solid #A55015;
 	text-shadow: 0px -2px #A55015;
+	background-color: #f28b51;
 	background: linear-gradient(to bottom, #f28b51 5%, #e66c18 100%);
 	background: -o-linear-gradient(to bottom, #f28b51 5%, #e66c18 100%);
 	background: -moz-linear-gradient(to bottom, #f28b51 5%, #e66c18 100%);
@@ -175,6 +178,7 @@ img a:focus {
 }
 
 .orange:hover, .orange:focus {
+	background-color: #e66c18;
 	background: linear-gradient(to bottom, #e66c18 5%, #f28b51 100%);
 	background: -o-linear-gradient(to bottom, #e66c18 5%, #f28b51 100%);
 	background: -moz-linear-gradient(to bottom, #e66c18 5%, #f28b51 100%);
@@ -189,6 +193,7 @@ img a:focus {
 .blue {
 	border-bottom: 5px solid #2980B9;
 	text-shadow: 0px -2px #2980B9;
+	background-color: #6fa5db;
 	background: linear-gradient(to bottom, #6fa5db 5%, #448bca 100%);
 	background: -o-linear-gradient(to bottom, #6fa5db 5%, #448bca 100%);
 	background: -moz-linear-gradient(to bottom, #6fa5db 5%, #448bca 100%);
@@ -197,6 +202,7 @@ img a:focus {
 }
 
 .blue:hover, .blue:focus {
+	background-color: #448bca;
 	background: linear-gradient(to bottom, #448bca 5%, #6fa5db 100%);
 	background: -o-linear-gradient(to bottom, #448bca 5%, #6fa5db 100%);
 	background: -moz-linear-gradient(to bottom, #448bca 5%, #6fa5db 100%);
@@ -211,6 +217,7 @@ img a:focus {
 .yellow {
 	border-bottom: 5px solid #A78400;
 	text-shadow: 0px -2px #A78400;
+	background-color: #ffc742;
 	background: linear-gradient(to bottom, #ffc742 5%, #e6b700 100%);
 	background: -o-linear-gradient(to bottom, #ffc742 5%, #e6b700 100%);
 	background: -moz-linear-gradient(to bottom, #ffc742 5%, #e6b700 100%);
@@ -219,6 +226,7 @@ img a:focus {
 }
 
 .yellow:hover, .yellow:focus {
+	background-color: #e6b700;
 	background: linear-gradient(to bottom, #e6b700 5%, #ffc742 100%);
 	background: -o-linear-gradient(to bottom, #e6b700 5%, #ffc742 100%);
 	background: -moz-linear-gradient(to bottom, #e6b700 5%, #ffc742 100%);
@@ -231,17 +239,19 @@ img a:focus {
 }
 
 .green {
+	border-bottom: 5px solid #467327;
+	text-shadow: 0px -2px #467327;
+	background-color: #80b85f;
 	background: linear-gradient(to bottom, #80b85f 5%, #62a336 100%);
 	background: -o-linear-gradient(to bottom, #80b85f 5%, #62a336 100%);
 	background: -moz-linear-gradient(to bottom, #80b85f 5%, #62a336 100%);
 	background: -webkit-linear-gradient(to bottom, #80b85f 5%, #62a336 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #80b85f ), color-stop(1, #62a336));
 
-	border-bottom: 5px solid #467327;
-	text-shadow: 0px -2px #467327;
 }
 
 .green:hover, .green:focus {
+	background-color: #62a336;
 	background: linear-gradient(to bottom, #62a336 5%, #80b85f 100%);
 	background: -o-linear-gradient(to bottom, #62a336 5%, #80b85f 100%);
 	background: -moz-linear-gradient(to bottom, #62a336 5%, #80b85f 100%);
@@ -256,6 +266,7 @@ img a:focus {
 .red {
 	border-bottom: 5px solid #860000;
 	text-shadow: 0px -2px #860000;
+	background-color: #E95050;
 	background: linear-gradient(to bottom, #E95050 5%, #C00000 100%);
 	background: -o-linear-gradient(to bottom, #E95050 5%, #C00000 100%);
 	background: -moz-linear-gradient(to bottom, #E95050 5%, #C00000 100%);
@@ -264,6 +275,7 @@ img a:focus {
 }
 
 .red:hover, .red:focus {
+	background-color: #C00000;
 	background: linear-gradient(to bottom, #C00000 5%, #E95050 100%);
 	background: -o-linear-gradient(to bottom, #C00000 5%, #E95050 100%);
 	background: -moz-linear-gradient(to bottom, #C00000 5%, #E95050 100%);
@@ -274,6 +286,7 @@ img a:focus {
 .purple {
 	border-bottom: 5px solid #281C35;
 	text-shadow: 0px -2px #281C35;
+	background-color: #735494;
 	background: linear-gradient(to bottom, #735494 5%, #5f417f 100%);
 	background: -o-linear-gradient(to bottom, #735494 5%, #5f417f 100%);
 	background: -moz-linear-gradient(to bottom, #735494 5%, #5f417f 100%);
@@ -282,6 +295,7 @@ img a:focus {
 }
 
 .purple:hover, .purple:focus {
+	background-color: #5f417f;
 	background: linear-gradient(to bottom, #5f417f 5%, #735494 100%);
 	background: -o-linear-gradient(to bottom, #5f417f 5%, #735494 100%);
 	background: -moz-linear-gradient(to bottom, #5f417f 5%, #735494 100%);
