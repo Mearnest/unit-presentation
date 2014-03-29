@@ -35,20 +35,20 @@ html(lang="en")
                     h1.title What if we could educate the world?
                     h3.title teachers helping teachers
             
-            #navigation.container
-                .row
-                    .col-md-1
-                    .col-md-10
-                        include navigation
-                .col-md-1
-                
-                        
-            #main.container
-                .row
-                    .col-md-1
-                    .col-md-10
-                        block main
-                    .col-md-1
+            .row
+                #navigation.container
+                    .row
+                        .col-md-1
+                        .col-md-10
+                            include navigation
+                        .col-md-1
+            .row          
+                #main.container
+                    .row
+                        .col-md-1
+                        .col-md-10
+                            block main
+                        .col-md-1
            
         block footer         
             #footer
