@@ -10,7 +10,7 @@ html(lang="en")
 		
 		title Lesson Unit
 		
-		link(href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css')
+		link(href='http://fonts.googleapis.com/css?family=Arvo:400,700|Bree+Serif' rel='stylesheet' type='text/css')
 		link(href="/styles/bootstrap.min.css", rel="stylesheet")
 		link(href="/styles/style.css", rel="stylesheet")
 		link(href="/styles/navigation.css", rel="stylesheet")
@@ -21,7 +21,7 @@ html(lang="en")
 				!window.jQuery && document.write('<script src="/js/jquery.min.js"><\/script>');
 		script(src="http://code.jquery.com/ui/1.10.4/jquery-ui.js")
 		script(src="/js/navigation.js")
-		script(src="/js/bootstrap.min.js")
+		script(src="/js/jquery.collagePlus.min.js")
 		
 		
 		//- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
@@ -34,12 +34,18 @@ html(lang="en")
 		block head
 			style.
 				body {
+					background-color: #fff;
 					background-image: url('/images/secondaryPageBG.png');
+					background-repeat: repeat-x;
 				}
 				
 				#main {
 					margin-top: 10px;
 					xborder: 1px dashed;
+				}
+				
+				h2.title {
+					color: #559D43;
 				}
 				
 				h3.title {
@@ -113,14 +119,7 @@ html(lang="en")
 						
 				.col-md-10
 					block footer
-						a.pull-left(href="/lesson-examples") 
-							img(src="/images/lesson-examples.png")
-							
-						a.pull-left(href="/unit-presentation") 
-							img.img-responsive(src="/images/unit-presentation.png")
-							
-						a.pull-right(href="/") 
-							img.img-responsive(src="/images/bfl-logo.png")
+						include ../footer
 				
 				.col-md-1
 					

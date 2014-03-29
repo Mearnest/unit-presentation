@@ -2,16 +2,34 @@ extends ../layout
 
 block head
 	style.
+		body {
+			background-color: #fff;
+			background-image: url('/images/secondaryPageBG.png');
+			background-repeat: repeat-x;
+		}
+		
 		#navigation {
 			display: none;
 		}
 		
 		#main {
-			margin-top: 20px;
+			/* margin-top: 20px; */
 		}
 		
 		#footer {
 			margin-top: 30px;
+		}
+		
+		h2.title {
+			color: #559D43;
+		}
+		
+		a:link {
+			color: #428bca
+		}
+		
+		a.pdf:hover, a.video:hover, a.pdf:focus, a.video:focus {
+			color: #66ADEB;
 		}
 		
 		a.video, a.pdf {
@@ -19,30 +37,6 @@ block head
 			font-family: 'Arvo', Helvetica, Arial, sans-serif;
 			font-size: 16px;
 			font-weight: 700;
-		}
-		
-		a.video:link, a.pdf:link {
-			color: #2A6496;
-		} 
-		
-		a.video:visited, a.pdf:visited {
-			color: #2A6496;
-		}
-		
-		a.video.principles:link, a.video.principles:visited {
-			color: #A7312E;
-		}
-		
-		a.video.strategies:link, a.video.strategies:visited {
-			color: #614483;
-		}
-		
-		a.video.application:link, a.video.application:visited {
-			color: #298DA7;
-		}
-		
-		a.video:hover, a.pdf:hover {
-			color: #0B2B64;
 		}
 		
 		div.video-frame, div.pdf-frame {
@@ -65,32 +59,34 @@ block head
 			$("a.video").click(function(event) {
 				event.preventDefault();
 				var parent = $(this).parent();
+				var span = $("span", $(this));
 				
-				if (parent.hasClass('glyphicon-eject')) {
-					parent.removeClass('glyphicon-eject');
+				if (span.hasClass('glyphicon-eject')) {
+					span.removeClass('glyphicon-eject');
 					$("div.video-frame", parent).remove();
 				}
 				else {
 					var videoID = $(this).attr("data-videoID");
 					
 					parent.append('<div class="video-frame"><iframe width="450" height="253" src="//www.youtube.com/embed/' + videoID + '?autoplay=1" frameborder="0" allowfullscreen></iframe></div>');
-					parent.addClass('glyphicon-eject');
+					span.addClass('glyphicon-eject');
 				}
 			})
 			
 			$("a.pdf").click(function(event) {
 				event.preventDefault();
 				var parent = $(this).parent();
+				var span = $("span", $(this));
 				
-				if (parent.hasClass('glyphicon-eject')) {
-					parent.removeClass('glyphicon-eject');
+				if (span.hasClass('glyphicon-eject')) {
+					span.removeClass('glyphicon-eject');
 					$("div.pdf-frame", parent).remove();
 				}
 				else {
 					var href = $(this).attr("href");
 					
-					$(this).parent().append('<div class="pdf-frame"><iframe width="900" height="510" src="' + href + '?autoplay=1" frameborder="0" allowfullscreen></iframe></div>');
-					parent.addClass('glyphicon-eject');
+					parent.append('<div class="pdf-frame"><iframe width="1000" height="560" src="' + href + '?autoplay=1" frameborder="0" allowfullscreen></iframe></div>');
+					span.addClass('glyphicon-eject');
 				}
 			});
 		});
@@ -99,104 +95,97 @@ block main
 	.col-md-1
 	
 	.col-md-10
-		h2.title Background and Examples
+		h2.title Lesson Videos
 		hr
 
-		h3 Background Materials
+		h3 Background
 		p
 
 		h4 What if we could educate the world?
 		p This brief video, made for the Wichita Community Foundation, explains the overall program.
-		p.glyphicon.glyphicon-film <a class="video" data-videoID='rb1zvEiF7l0' href="http://youtu.be/rb1zvEiF7l0">Wichita Community Foundation</a>
+		p<a class="video" data-videoID='rb1zvEiF7l0' href="http://youtu.be/rb1zvEiF7l0"><span class="glyphicon glyphicon-film">&nbsp;</span>Wichita Community Foundation</a>
 		p
 		
 		h4 Content Framework Chart
 		p This chart outlines some ideas for possible lesson content. These preliminary ideas were <br>for our model lessons, to get the ball rolling. We invite you to share further ideas.
-			p.glyphicon.glyphicon-file <a class="pdf" href="/files/ContentFramework.pdf">Content Framework</a>
+			p<a class="pdf" href="/files/ContentFramework.pdf"><span class="glyphicon glyphicon-file">&nbsp;</span>Content Framework</a>
 
 		hr
 		
-		a(href="#Principles")
+		a(name="topPrinciples", href="#Principles")
 			img(src="/images/PrinciplesTitle.png", title="Principles", style="width:180px;")
-		a(href="#Strategies")
+		a(name="topStrategies", href="#Strategies")
 			img(src="/images/StrategiesTitle.png", title="Strategies", style="width:180px;")
-		a(href="#Application")
+		a(name="topApplication", href="#Application")
 			img(src="/images/ApplicationTitle.png", title="Application", style="width:180px;")
 		
 		h3 Lesson Video Examples
 
 		h4 
-			a(name="Principles") <img src="/images/PrinciplesTitle.png" title="Principles" style="width:180px;">
+			a(name="Principles", href="#topPrinciples") <img src="/images/PrinciplesTitle.png" title="Principles" style="width:180px;">
 		
 		p Videos about teaching “principles” that apply to any lesson. These videos will be translated into<br>practically all the languages of the world.
 
 		ul
 			li 
-				p.glyphicon.glyphicon-film <a class="video principles" data-videoID='MbQpDsP6AzU' href="http://youtu.be/MbQpDsP6AzU">Structure of a Lesson (Train)</a>
+				p <a class="video principles" data-videoID='MbQpDsP6AzU' href="http://youtu.be/MbQpDsP6AzU"><span class="glyphicon glyphicon-film">&nbsp;</span>Structure of a Lesson (Train)</a>
 
 			li 
-				p.glyphicon.glyphicon-film <a class="video principles" data-videoID='UGPLGHBHKtk' href="http://youtu.be/UGPLGHBHKtk">Structure of a Lesson (Train) – Spanish translation </a>
+				p <a class="video principles" data-videoID='UGPLGHBHKtk' href="http://youtu.be/UGPLGHBHKtk"><span class="glyphicon glyphicon-film">&nbsp;</span>Structure of a Lesson (Train) – Spanish translation </a>
 
 			li 
-				p.glyphicon.glyphicon-film <a class="video principles" data-videoID='tO9jWHVcnbA' href=" http://youtu.be/tO9jWHVcnbA">Structure of a Lesson (Squirrel)</a>
+				p<a class="video principles" data-videoID='RhsAyiFzCN8' href=" http://youtu.be/RhsAyiFzCN8"><span class="glyphicon glyphicon-film">&nbsp;</span>Structure of a Lesson (Squirrel)</a>
 
 			li 
-				p.glyphicon.glyphicon-film <a class="video principles" data-videoID='2L1yR5NGxOA' href="http://youtu.be/2L1yR5NGxOA">Importance of Introduction </a>
+				p <a class="video principles" data-videoID='2L1yR5NGxOA' href="http://youtu.be/2L1yR5NGxOA"><span class="glyphicon glyphicon-film">&nbsp;</span>Importance of Introduction </a>
 
 			li 
-				p.glyphicon.glyphicon-film <a class="video principles" data-videoID='TJ8OYbJblgU' href="http://youtu.be/TJ8OYbJblgU">Importance of Introduction (Train)</a>
+				p <a class="video principles" data-videoID='TJ8OYbJblgU' href="http://youtu.be/TJ8OYbJblgU"><span class="glyphicon glyphicon-film">&nbsp;</span>Importance of Introduction (Train)</a>
 
 			li 
-				p.glyphicon.glyphicon-film <a class="video principles" data-videoID='7Jt51QnkSYI' href="http://youtu.be/7Jt51QnkSYI">Importance of Introduction (Children’s art)</a>
+				p <a class="video principles" data-videoID='7Jt51QnkSYI' href="http://youtu.be/7Jt51QnkSYI"><span class="glyphicon glyphicon-film">&nbsp;</span>Importance of Introduction (Children’s art)</a>
 
 			li 
-				p.glyphicon.glyphicon-film <a class="video principles" data-videoID='RBOZLxaZjZQ' href="http://youtu.be/RBOZLxaZjZQ">New Information</a>
+				p <a class="video principles" data-videoID='RBOZLxaZjZQ' href="http://youtu.be/RBOZLxaZjZQ"><span class="glyphicon glyphicon-film">&nbsp;</span>New Information</a>
 
 			li 
-				p.glyphicon.glyphicon-film <a class="video principles" data-videoID='KzvdlG-BfpI' href="http://youtu.be/KzvdlG-BfpI">Review</a>
+				p <a class="video principles" data-videoID='KzvdlG-BfpI' href="http://youtu.be/KzvdlG-BfpI"><span class="glyphicon glyphicon-film">&nbsp;</span>Review</a>
 		
 		p
 		h4
-			a(name="Strategies") <img src="/images/StrategiesTitle.png" title="Strategies" style="width:180px;">
+			a(href="#topStrategies", name="Strategies") <img src="/images/StrategiesTitle.png" title="Strategies" style="width:180px;">
 			
 		p Videos on teaching “strategies” that are used in specific situations. These videos will also be <br>translated into multiple languages.
 
 		ul 
 			li 
-				p.glyphicon.glyphicon-film <a class="video strategies" data-videoID='eoDo3CZHrvk' href="http://youtu.be/eoDo3CZHrvk">Graphic Organizer – KWL</a>
+				p <a class="video strategies" data-videoID='jFTCehv4e9I' href="http://youtu.be/jFTCehv4e9I"><span class="glyphicon glyphicon-film">&nbsp;</span>Graphic Organizer – KWL</a>
 
 			li 
-				p.glyphicon.glyphicon-film <a class="video strategies" data-videoID='LZrLfgVYVNY' href="http://youtu.be/LZrLfgVYVNY">Venn Diagram</a>
+				p <a class="video strategies" data-videoID='LZrLfgVYVNY' href="http://youtu.be/LZrLfgVYVNY"><span class="glyphicon glyphicon-film">&nbsp;</span>Venn Diagram</a>
 
 			li 
-				p.glyphicon.glyphicon-film <a class="video strategies" data-videoID='kGEzAMT6I34' href="http://youtu.be/kGEzAMT6I34">How to Teach Numerals</a>
+				p <a class="video strategies" data-videoID='kGEzAMT6I34' href="http://youtu.be/kGEzAMT6I34"><span class="glyphicon glyphicon-film">&nbsp;</span>How to Teach Numerals</a>
 
 			li 
-				p.glyphicon.glyphicon-film <a class="video strategies" data-videoID='_Whm7yI5ZKQ' href="http://youtu.be/_Whm7yI5ZKQ">How to Teach Numerals (Translations)</a>
+				p <a class="video strategies" data-videoID='_Whm7yI5ZKQ' href="http://youtu.be/_Whm7yI5ZKQ"><span class="glyphicon glyphicon-film">&nbsp;</span>How to Teach Numerals (Translations)</a>
 			li 
-				p.glyphicon.glyphicon-film <a class="video strategies" data-videoID='tWGQnI57cnA' href="http://youtu.be/tWGQnI57cnA">Sequencing</a>
-
+				p <a class="video strategies" data-videoID='7Xtg3nyWVKA' href="http://youtu.be/7Xtg3nyWVKA"><span class="glyphicon glyphicon-film">&nbsp;</span>Sequencing</a>
+		
 		p
 		h4 
-			a(name="Application") <img src="/images/ApplicationTitle.png" title="Application" style="width:180px;">
+			a(href="#topApplication", name="Application") <img src="/images/ApplicationTitle.png" title="Application" style="width:180px;">
 			
 		p Video showing how a teacher demonstrates the classroom “application” of a principle or strategy:
 		
 		ul
 			li 
-				p.glyphicon.glyphicon-film <a class="video application" data-videoID='GqBPK7CioXs' href="http://youtu.be/GqBPK7CioXs">Introduction – Teacher Application</a>
+				p <a class="video application" data-videoID='GqBPK7CioXs' href="http://youtu.be/GqBPK7CioXs"><span class="glyphicon glyphicon-film">&nbsp;</span>Introduction – Teacher Application</a>
 			
 	.col-md-1
 	
 block footer
-	a.pull-left.active(href="/lesson-examples") 
-		img(src="/images/lesson-examples.png")
-		
-	a.pull-left(href="/unit-presentation") 
-		img(src="/images/unit-presentation.png")
-		
-	a.pull-right(href="/") 
-		img.img-responsive(src="/images/bfl-logo.png")
+	include ../footer
 	
 	
 	

@@ -1,125 +1,107 @@
 style.
-	p.blurb {
-		min-height: 145px;
+	div.wrapper{
+		float:left; /* important */
+		position:relative; /* important(so we can absolutely position the description div */
+		margin: 10px;
+		background-color: #fff;
+	}
+	
+	div.description{
+		position:absolute; /* absolute position (so we can position it where we want)*/
+		bottom:0px; /* position will be on bottom */
+		left:0px;
+		width:100%;
+		/* styling bellow */
+		background-color:black;
+		font-family: 'tahoma';
+		font-size:15px;
+		color:white;
+		opacity:0.6; /* transparency */
+		filter:alpha(opacity=60); /* IE transparency */
+		display: none;
+	}
+	
+	p.description_content {
+		padding:10px;
+		margin:0px;
+	}
+	
+	.wrapper img {
+		height: 260px;
 	}
 
-h2.title Credits
+h2.title About the Team
 hr
 
-.row
-	div.col-md-6
-		.col-md-12
-			p.name Veronica Velenciana
+.wrapper
+	img(src='/images/veronica.png')
+	.description
+		p.description_content.
+			Veronica shared her teaching skills and experience by demonstrating how she does a lesson introduction with her Kindergarten students. She can be seen in one of the Application videos.
 			
-		.col-md-4
-			img(src="/images/veronica.png")
+.wrapper
+	img(src='/images/shirley.png')
+	.description
+		p.description_content.
+			Shirley contributed her expertise in teacher training by helping generate the educational content that guided the development of the videos and other materials.
 			
-		.col-md-8
-			p.blurb.
-				Veronica shared her teaching skills and experience by demonstrating how she does a lesson introduction with her Kindergarten students. She can be seen in one of the Application videos.
-				
-	div.col-md-6
-		.col-md-12
-			p.name Shirley Lefever-Davis
+.wrapper
+	img(src='/images/sheril.png')
+	.description
+		p.description_content.
+			Sheril contributed her expertise in teacher training by helping generate the educational content that guided the development of the videos and other materials.
 			
-		.col-md-4
-			img(src="/images/shirley.png")
+.wrapper
+	img(src='/images/sarah.png')
+	.description
+		p.description_content.
+			Sarah provided animation, vocal talent and also helped with audio experimenting.
+			
+.wrapper
+	img(src='/images/richard.png')
+	.description
+		p.description_content.
+			Richard contributed his talents in illustration to this project, and also served as voice talent.
+			
+.wrapper
+	img(src='/images/balbir.png')
+	.description
+		p.description_content.
+			Balbir played a key role in conceptualizing and was the overall director of this project. He also played the role of the “client,” overseeing and guiding all aspects of production.
+			
+.wrapper
+	img(src='/images/jeffrey.png')
+	.description
+		p.description_content.
+			Jeffrey was a key animator on this project. He also worked with conceptualizing, writing, sound recording and sound editing.
+			
+.wrapper
+	img(src='/images/scott.png')
+	.description
+		p.description_content.
+			Scott worked with conceptualizing, graphics, animation, sound recording and video editing. He was also the overall manager of the project, helping to keep everyone’s tasks clear and organized.
+			
+.wrapper
+	img(src='/images/erin.png')
+	.description
+		p.description_content.
+			Erin served as a graphic artist, animator and voice talent. She also contributed her talents to conceptualizing and creating the visual look and feel for this project.
+			
+.wrapper
+	img(src='/images/mark.png')
+	.description
+		p.description_content.
+			Mark was a key animator on this project. He also worked with video exporting and editing, and provided general technical support.
 	
-		.col-md-8
-			p.blurb.
-				Shirley contributed her expertise in teacher training by helping generate the educational content that guided the development of the videos and other materials.
-				
-.row
-	div.col-md-6
-		.col-md-12
-			p.name Sheril Logan
-			
-		.col-md-4
-			img(src="/images/sheril.png")
-			
-		.col-md-8
-			p.blurb.
-				Sheril contributed her expertise in teacher training by helping generate the educational content that guided the development of the videos and other materials.
-				
-	div.col-md-6
-		.col-md-12
-			p.name Richard Crowson
-			
-		.col-md-4
-			img(src="/images/richard.png", style="width:139px")
-			
-		.col-md-8
-			p.blurb.
-				Richard contributed his talents in illustration to this project, and also served as voice talent.
-
-.row
-	div.col-md-6
-		.col-md-12
-			p.name Sarah Wolfe
-			
-		.col-md-4
-			img(src="/images/sarah.png")
-			
-		.col-md-8
-			p.blurb.
-				Sarah provided animation, vocal talent and also helped with audio experimenting.
+script.
+	$(document).ready(function() {
+		$(".wrapper").mouseover(function(event) {
+			var description = $(".description", this);
+			description.show();
+		});
 		
-	div.col-md-6
-		.col-md-12
-			p.name Balbir Mathur
-			
-		.col-md-4
-			img(src="/images/balbir.png")
-			
-		.col-md-8
-			p.blurb.
-				Balbir played a key role in conceptualizing and was the overall director of this project. He also played the role of the “client,” overseeing and guiding all aspects of production.
-
-.row
-	div.col-md-6
-		.col-md-12
-			p.name Scott Garvey
-			
-		.col-md-4
-			img(src="/images/scott.png")
-			
-		.col-md-8
-			p.blurb.
-				Scott worked with conceptualizing, graphics, animation, sound recording and video editing. 
-				He was also the overall manager of the project, helping to keep everyone’s tasks clear and organized.
-
-		
-	div.col-md-6
-		.col-md-12
-			p.name Jeffrey Faus
-			
-		.col-md-4
-			img(src="/images/jeffrey.png")
-			
-		.col-md-8
-			p.blurb.
-				Jeffrey was a key animator on this project. He also worked with conceptualizing, writing, sound recording and sound editing.
-
-.row
-	div.col-md-6
-		.col-md-12
-			p.name Erin DeGroot
-			
-		.col-md-4
-			img(src="/images/erin.png")
-			
-		.col-md-8
-			p.blurb.
-				Erin served as a graphic artist, animator and voice talent. She also contributed her talents to conceptualizing and creating the visual look and feel for this project.
-				
-	div.col-md-6
-		.col-md-12
-			p.name Mark Earnest
-			
-		.col-md-4
-			img(src="/images/mark.png")
-			
-		.col-md-8
-			p.blurb.
-				Mark was a key animator on this project. He also worked with video exporting and editing, and provided general technical support.
-		
+		$(".wrapper").mouseout(function(event) {
+			var description = $(".description", this);
+			description.hide();
+		});
+	});
