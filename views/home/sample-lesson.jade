@@ -1,0 +1,73 @@
+extends ../layout
+
+block head
+	title Sample Lesson
+
+	style.
+		#navigation {
+			display: none;
+		}
+		
+		#main {
+			margin-top: 20px;
+		}
+
+		h3.title.lesson {
+			margin-top: 40px;
+		}
+
+block main
+	h2.title Sample Lesson
+	hr
+	
+	h3.title.lesson Importance of Introduction
+	
+	.row(style="margin-top: 40px;")
+		.col-md-4
+			a(href="/sample-lesson/how-to-video", class="action-button shadow animate orange")
+				span.fa.fa-youtube-play
+				br
+				| How-to Video
+				br
+				span.description Start here&#8212;this is the<br>main video of the lesson.
+			
+		.col-md-4
+			a(href="/sample-lesson/read-more", class="action-button shadow animate blue") 
+				span.fa.fa-list-alt
+				br
+				| Read More
+				br
+				span.description If you prefer to read,<br>or want more details.
+			
+		.col-md-4
+			a(href="/sample-lesson/classroom-example", class="action-button shadow animate yellow") 
+				span.fa.fa-video-camera
+				br
+				| Classroom Example
+				br
+				span.description See how a teacher applies<br>this lesson in her classroom.
+	
+	.row.second(style="margin-top: 40px;")
+		.col-md-4
+			a(href="/sample-lesson/review-exercises", class="action-button shadow animate green")
+				span.fa.fa-pencil-square-o
+				br
+				| Review Exercises
+				br
+				span.description Do these to practice<br>what you learned.
+				
+		.col-md-4
+			a(href="/sample-lesson/about-the-team", class="action-button shadow animate red") 
+				span.fa.fa-user
+				br
+				| About the Team
+				br
+				span.description Meet the group of people<br>who made this lesson.
+			
+		.col-md-4
+			a(href="/sample-lesson/translated-video", class="action-button shadow animate purple")
+				span.fa.fa-comments
+				br
+				| Translated Video
+				br
+				span.description Lessons will be translated<br>into many languages.

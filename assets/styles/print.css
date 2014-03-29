@@ -1,11 +1,12 @@
-body {margin:0; padding:0; line-height: 1.4em; word-spacing:1px; letter-spacing:0.2px; font: 13px Arial, Helvetica,"Lucida Grande", serif; color: #000;}
+body { margin:0; padding:0; line-height: 1.4em; word-spacing:1px; letter-spacing:0.2px; font: 13px Arial, Helvetica,"Lucida Grande", serif; color: #000; }
+#header, #navigation, #footer { display: none }
 
 /*Header*/
+h2.title { display: none; }
 h2 {color:#000; font-size:25px; }
 h3 { font-size: 22px; }
 
 /*Image*/
-img, img a, button, .btn-info {display:none;}
+img, img a, .button, .btn-info { display:none; }
 
 .glyphicon, #destination-search { display: none; }
-#header, #navbar, #footer {display: none}

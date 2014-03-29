@@ -1,0 +1,118 @@
+extends ../layout
+
+block head
+	title About The Team
+
+	style.
+		body {
+			background-color: #fff;
+			background-image: url('/images/secondaryPageBG.png');
+			background-repeat: repeat-x;
+		}
+
+		div.wrapper{
+			float:left; /* important */
+			position:relative; /* important(so we can absolutely position the description div */
+			margin: 5px;
+			padding: 5px;
+		}
+		
+		div.description{
+			position:absolute; /* absolute position (so we can position it where we want)*/
+			bottom: 0px; /* position will be on bottom */
+			left: 0px;
+			width: 100%;
+			/* styling bellow */
+			background-color: black;
+			font-family: 'tahoma';
+			font-size: 15px;
+			color:white;
+			opacity:0.6; /* transparency */
+			filter:alpha(opacity=60); /* IE transparency */
+			display: none;
+		}
+		
+		p.description_content {
+			padding: 10px;
+			margin: 0px;
+			
+		}
+		
+		.wrapper img {
+			/* height: 180px; */
+		}
+
+		.img-description {
+			width: 750px;
+		}
+
+block main
+	h2.title About the Team
+	hr
+
+	.row
+		.wrapper
+			img(src='/images/veronica.png')
+			.description
+				p.description_content.
+					Veronica shared her teaching skills and experience by demonstrating how she does a lesson introduction with her Kindergarten students. She can be seen in one of the Application videos.
+					
+		.wrapper
+			img(src='/images/shirley.png')
+			.description
+				p.description_content.
+					Shirley contributed her expertise in teacher training by helping generate the educational content that guided the development of the videos and other materials.
+					
+		.wrapper
+			img(src='/images/sheril.png')
+			.description
+				p.description_content.
+					Sheril contributed her expertise in teacher training by helping generate the educational content that guided the development of the videos and other materials.
+					
+		.wrapper
+			img(src='/images/sarah.png')
+			.description
+				p.description_content.
+					Sarah provided animation, vocal talent and also helped with audio experimenting.
+					
+		.wrapper
+			img(src='/images/richard.png')
+			.description
+				p.description_content.
+					Richard contributed his talents in illustration to this project, and also served as voice talent.
+	
+	.row
+		.wrapper
+			img(src='/images/balbir.png')
+			.description
+				p.description_content.
+					Balbir played a key role in conceptualizing and was the overall director of this project. He also played the role of the “client,” overseeing and guiding all aspects of production.
+					
+		.wrapper
+			img(src='/images/jeffrey.png')
+			.description
+				p.description_content.
+					Jeffrey was a key animator on this project. He also worked with conceptualizing, writing, sound recording and sound editing.
+					
+		.wrapper
+			img(src='/images/scott.png')
+			.description
+				p.description_content.
+					Scott worked with conceptualizing, graphics, animation, sound recording and video editing. He was also the overall manager of the project, helping to keep everyone’s tasks clear and organized.
+					
+		.wrapper
+			img(src='/images/erin.png')
+			.description
+				p.description_content.
+					Erin served as a graphic artist, animator and voice talent. She also contributed her talents to conceptualizing and creating the visual look and feel for this project.
+					
+		.wrapper
+			img(src='/images/mark.png')
+			.description
+				p.description_content.
+					Mark was a key animator on this project. He also worked with video exporting and editing, and provided general technical support.
+
+	.row
+
+	h3.img-description
+	

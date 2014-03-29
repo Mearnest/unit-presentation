@@ -1,85 +1,56 @@
-doctype html
-html(lang="en")
-	head
-		meta(charset="utf-8")
-		//- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-		meta(http-equiv="X-UA-Compatible', content='IE=edge, chrome=1")
-		meta(name="viewport" content="width=device-width, initial-scale=1.0")
-		meta(name="apple-mobile-web-app-capable", content="yes")
-		link(rel="icon", type="image/png", href="/images/favicon_v2.ico")
-		
-		title Lesson Unit
-		
-		link(href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet', type='text/css')
-		link(href='http://fonts.googleapis.com/css?family=Bree+Serif', rel='stylesheet', type='text/css')
-		link(href="/styles/bootstrap.min.css", rel="stylesheet")
-		link(href="/styles/style.css", rel="stylesheet")
-		link(href="/styles/print.css", rel="stylesheet", media="print")
-		
-		script(src='http://code.jquery.com/jquery.min.js')
-			script.
-				!window.jQuery && document.write('<script src="/js/jquery.min.js"><\/script>');
-		script(src="http://code.jquery.com/ui/1.10.4/jquery-ui.js")
-		script(src="/js/navigation.js")
-		script(src="/js/bootstrap.min.js")
-		
-		
-		//- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
-		//- WARNING: Respond.js doesn't work if you view the page via file:
-		// [if lt IE 9]
-			script(src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js")
-			script(src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js")
-		// [endif]
-		
-		style.
-			h1.title {
-				text-shadow: 0px 1px 1px #e3fc81;
-				text-align: center;
-				font-size: 58px;
-				margin-top: 80px;
-				line-height: 1.2;
-				color: #1D607F;
-				xfont-weight: 700;
-			}
-			
-			h3.title {
-				color: #559D43;
-				text-align: center;
-				margin-top: 40px;
-			}
-			
-			body {
-				background-image: url('/images/background.png');
-			}
+extends ../layout
 
-body
-	#wrapper
-		#header.container
-		
-		#main.container
-			.row
-				h1.title  What if we could<br>educate the <br>world?
-				h3.title Teachers helping teachers
-				
-			.row(style="margin-top: 60px;")
-				.col-md-3
-				
-				.col-md-3(style="text-align: right")
-					a(href="/lesson-examples")
-						img(src="/images/background-examples-front.png")
-					
-				.col-md-3(style="text-align: left;")
-					a(href="/unit-presentation")
-						img(src="/images/unit-presentation-front.png")
-						
-				.col-md-3
-					
-						
-			
-	#footer
-		.container
-			div(style="text-align: center;")
-				a(href="/")
-					img(src="/images/bfl-logo.png")
-		
-	
+block head
+  title Educate the World
+
+  style.
+    #header {
+      display: none;
+    }
+    
+    #navigation {
+      display: none;
+    }
+
+    h1.title {
+      margin-top: 80px;
+      text-shadow: 0px 1px 1px #e3fc81;
+      text-align: center;
+      font-size: 54px;
+      line-height: 1.2;
+      color: #1D607F;
+    }
+    
+    h3.title {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    h4.blurb {
+      font-family: 'Bree Serif', serif;
+      margin: 0 85px;
+    }
+
+block main
+  .row
+    h1.title  What if we could educate the world?
+    h3.title A worldwide movement to empower teachers who serve the poor.
+    
+    h4.blurb
+      | Education experts share their knowledge of proven teaching methods. People around the world 
+      | "package" that knowledge into powerful lessons to meet the needs of local teachers. Caring
+      | people share these lessons with teachers who need training, free of cost.
+      p
+      | People from all walks of life can join hands to help break the viscious cycle of poverty for 
+      | millions of people&mdash;through education.
+    
+  .row(style="margin-top: 60px; text-align:center")
+    a.lesson-button(href="/lesson-videos", style="margin-right: 25px") Lesson Videos
+    
+    a.lesson-button(href="/sample-lesson", style="margin-left: 25px") Sample Lesson
+
+block footer
+  #footer
+    div(style="text-align: center;")
+      a(href="/")
+        img.logo(src="/images/bfl-logo.png")
