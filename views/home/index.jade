@@ -1,56 +1,42 @@
 extends ../layout
 
 block head
-  title Educate the World
+	title Educate the World
 
-  style.
-    #header {
-      display: none;
-    }
-    
-    #navigation {
-      display: none;
-    }
+	style.
+		#header {
+			display: none;
+		}
+		
+		#navigation {
+			display: none;
+		}
 
-    h1.title {
-      margin-top: 80px;
-      text-shadow: 0px 1px 1px #e3fc81;
-      text-align: center;
-      font-size: 54px;
-      line-height: 1.2;
-      color: #1D607F;
-    }
-    
-    h3.title {
-      margin-top: 40px;
-      text-align: center;
-    }
-
-    h4.blurb {
-      font-family: 'Bree Serif', serif;
-      margin: 0 85px;
-    }
+		h4.blurb {
+			font-family: 'Bree Serif', serif;
+			margin: 0 85px;
+		}
 
 block main
-  .row
-    h1.title  What if we could educate the world?
-    h3.title A worldwide movement to empower teachers who serve the poor.
+	.row
+		h1.title.home  What if we could educate the world?
+		h3.title.home A worldwide movement to empower teachers who serve the poor.
     
-    h4.blurb
-      | Education experts share their knowledge of proven teaching methods. People around the world 
-      | "package" that knowledge into powerful lessons to meet the needs of local teachers. Caring
-      | people share these lessons with teachers who need training, free of cost.
-      p
-      | People from all walks of life can join hands to help break the vicious cycle of poverty for 
-      | millions of people&mdash;through education.
+		h4.blurb
+			| Education experts share their knowledge of proven teaching methods. People around the world 
+			| "package" that knowledge into powerful lessons to meet the needs of local teachers. Caring
+			| people share these lessons with teachers who need training, free of cost.
+			p
+			| People from all walks of life can join hands to help break the vicious cycle of poverty for 
+			| millions of people&mdash;through education.
     
-  .row(style="margin-top: 60px; text-align:center")
-    a.lesson-button(href="/lesson-videos", style="margin-right: 25px") Lesson Videos
+	.row(style="margin-top: 60px; text-align:center")
+		a.lesson-button(href="/lesson-videos", style="margin-right: 25px") Lesson Videos
     
-    a.lesson-button(href="/sample-lesson", style="margin-left: 25px") Sample Lesson
+		a.lesson-button(href="/sample-lesson", style="margin-left: 25px") Sample Lesson
 
 block footer
-  #footer
-    div(style="text-align: center;")
-      a(href="/")
-        img.logo(src="/images/bfl-logo.png")
+	#footer
+		div(style="text-align: center;")
+			a(href="/")
+				img.logo(src="/images/bfl-logo.png")

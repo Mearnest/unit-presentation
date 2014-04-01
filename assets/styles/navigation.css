@@ -112,13 +112,6 @@
 .purple.button.active { 
 	background-color: #7024B5; 
 }
-
-
-
-
-
-
-
 .blue2.button { 
 	background-color: #31859C; 
 }
@@ -126,93 +119,15 @@
 	background-color: #2575cf; 
 }
 
-
-
-/*  Lesson Manual Navigation */
-.navigation { 
-	list-style: none; 
-	overflow: hidden; 
-	font: 18px Trebuchet, Helvetica, Arial, Sans-Serif;
-	padding-left: 0;
-	margin-left: 0;
+/***		Smaller Screen Sizes		***/
+@media (max-width: 1200px) {
+	.large.button {
+		font-size: 13px;
+	}
 }
 
-.navigation li { 
-	float: left; 
-}
-
-.navigation li a {
-	color: white;
-	text-decoration: none; 
-	padding: 10px 0 10px 50px;
-	background: brown;                   /* fallback color */
-	background: #AC391E;
-	position: relative; 
-	display: block;
-	float: left;
-}
-
-.navigation li a:after { 
-	content: " "; 
-	display: block; 
-	width: 0; 
-	height: 0;
-	border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
-	border-bottom: 50px solid transparent;
-	border-left: 30px solid hsla(34,85%,35%,1);
-	position: absolute;
-	top: 50%;
-	margin-top: -50px; 
-	left: 100%;
-	z-index: 2; 
-}
-
-.navigation li a:before { 
-	content: " "; 
-	display: block; 
-	width: 0; 
-	height: 0;
-	border-top: 50px solid transparent;       
-	border-bottom: 50px solid transparent;
-	border-left: 30px solid white;
-	position: absolute;
-	top: 50%;
-	margin-top: -50px; 
-	margin-left: 1px;
-	left: 100%;
-	z-index: 1; 
-}
-
-.navigation li:first-child a {
-	padding-left: 10px;
-}
-
-.navigation.manual li:nth-child(1) a       { background:        #AC391E; }
-.navigation.manual li:nth-child(1) a:after { border-left-color: #AC391E; }
-.navigation.manual li:nth-child(2) a       { background:        #BC7111; }
-.navigation.manual li:nth-child(2) a:after { border-left-color: #BC7111; }
-.navigation.manual li:nth-child(3) a       { background:        #BFB31D; }
-.navigation.manual li:nth-child(3) a:after { border-left-color: #BFB31D; }
-.navigation.manual li:nth-child(4) a       { background:        #80BC1D; }
-.navigation.manual li:nth-child(4) a:after { border-left-color: #80BC1D; }
-.navigation.manual li:nth-child(5) a       { background:        #659912; }
-.navigation.manual li:nth-child(5) a:after { border-left-color: #659912; }
-.navigation.manual li:nth-child(6) a       { background:        #33ABBA; }
-.navigation.manual li:nth-child(6) a:after { border-left-color: #33ABBA; }
-.navigation.manual li:nth-child(7) a       { background:        #3389BA; }
-.navigation.manual li:nth-child(7) a:after { border-left-color: #3389BA; }
-.navigation.manual li:nth-child(8) a       { background:        #61578B; }
-.navigation.manual li:nth-child(8) a:after { border-left-color: #61578B; }
-.navigation.manual li:nth-child(9) a       { background:        #6F767B; }
-.navigation.manual li:nth-child(9) a:after { border-left-color: #6F767B; }
-
-.navigation.manual li a:hover { background: gold }
-.navigation.manual li a:hover:after { border-left-color: gold }
-
-.navigation li a.active {
-	background-color: lightgray !important;
-}
-
-.navigation li a.active:after {
-	border-left-color: lightgray !important;
+@media (max-width: 1000px) {
+	.large.button {
+		font-size: 12px;
+	}
 }
