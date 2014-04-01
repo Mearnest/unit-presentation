@@ -54,7 +54,16 @@ h1.title {
 	position: relative; 
 	top: -10px;
 }
-	
+
+h1.title.home {
+	margin-top: 80px;
+	text-shadow: 0px 1px 1px #e3fc81;
+	text-align: center;
+	font-size: 54px;
+	line-height: 1.2;
+	color: #1D607F;
+}
+
 h2.title, h3.title {
 	color: #559D43;
 	font-family: 'Arvo', serif;
@@ -68,6 +77,15 @@ h2.title {
 h3.title {
 	font-size: 20px;
 	position: relative; top: -30px;
+}
+
+h3.title.home {
+	margin-top: 40px;
+	text-align: center;
+}
+
+h3.title.lesson {
+	margin-top: 40px;
 }
 
 hr {
@@ -178,7 +196,7 @@ img a:focus {
 .orange {
 	border-bottom: 5px solid #A55015;
 	text-shadow: 0px -2px #A55015;
-	background-color: #f28b51;
+	background-color: #e66c18;
 	background: linear-gradient(to bottom, #f28b51 5%, #e66c18 100%);
 	background: -o-linear-gradient(to bottom, #f28b51 5%, #e66c18 100%);
 	background: -moz-linear-gradient(to bottom, #f28b51 5%, #e66c18 100%);
@@ -187,7 +205,7 @@ img a:focus {
 }
 
 .orange:hover, .orange:focus {
-	background-color: #e66c18;
+	background-color: #f28b51;
 	background: linear-gradient(to bottom, #e66c18 5%, #f28b51 100%);
 	background: -o-linear-gradient(to bottom, #e66c18 5%, #f28b51 100%);
 	background: -moz-linear-gradient(to bottom, #e66c18 5%, #f28b51 100%);
@@ -202,7 +220,7 @@ img a:focus {
 .blue {
 	border-bottom: 5px solid #2980B9;
 	text-shadow: 0px -2px #2980B9;
-	background-color: #6fa5db;
+	background-color: #448bca;
 	background: linear-gradient(to bottom, #6fa5db 5%, #448bca 100%);
 	background: -o-linear-gradient(to bottom, #6fa5db 5%, #448bca 100%);
 	background: -moz-linear-gradient(to bottom, #6fa5db 5%, #448bca 100%);
@@ -211,7 +229,7 @@ img a:focus {
 }
 
 .blue:hover, .blue:focus {
-	background-color: #448bca;
+	background-color: #6fa5db;
 	background: linear-gradient(to bottom, #448bca 5%, #6fa5db 100%);
 	background: -o-linear-gradient(to bottom, #448bca 5%, #6fa5db 100%);
 	background: -moz-linear-gradient(to bottom, #448bca 5%, #6fa5db 100%);
@@ -226,7 +244,7 @@ img a:focus {
 .yellow {
 	border-bottom: 5px solid #A78400;
 	text-shadow: 0px -2px #A78400;
-	background-color: #ffc742;
+	background-color: #e6b700;
 	background: linear-gradient(to bottom, #ffc742 5%, #e6b700 100%);
 	background: -o-linear-gradient(to bottom, #ffc742 5%, #e6b700 100%);
 	background: -moz-linear-gradient(to bottom, #ffc742 5%, #e6b700 100%);
@@ -235,7 +253,7 @@ img a:focus {
 }
 
 .yellow:hover, .yellow:focus {
-	background-color: #e6b700;
+	background-color: #ffc742;
 	background: linear-gradient(to bottom, #e6b700 5%, #ffc742 100%);
 	background: -o-linear-gradient(to bottom, #e6b700 5%, #ffc742 100%);
 	background: -moz-linear-gradient(to bottom, #e6b700 5%, #ffc742 100%);
@@ -250,7 +268,7 @@ img a:focus {
 .green {
 	border-bottom: 5px solid #467327;
 	text-shadow: 0px -2px #467327;
-	background-color: #80b85f;
+	background-color: #62a336;
 	background: linear-gradient(to bottom, #80b85f 5%, #62a336 100%);
 	background: -o-linear-gradient(to bottom, #80b85f 5%, #62a336 100%);
 	background: -moz-linear-gradient(to bottom, #80b85f 5%, #62a336 100%);
@@ -260,7 +278,7 @@ img a:focus {
 }
 
 .green:hover, .green:focus {
-	background-color: #62a336;
+	background-color: #80b85f;
 	background: linear-gradient(to bottom, #62a336 5%, #80b85f 100%);
 	background: -o-linear-gradient(to bottom, #62a336 5%, #80b85f 100%);
 	background: -moz-linear-gradient(to bottom, #62a336 5%, #80b85f 100%);
@@ -275,7 +293,7 @@ img a:focus {
 .red {
 	border-bottom: 5px solid #860000;
 	text-shadow: 0px -2px #860000;
-	background-color: #E95050;
+	background-color: #C00000;
 	background: linear-gradient(to bottom, #E95050 5%, #C00000 100%);
 	background: -o-linear-gradient(to bottom, #E95050 5%, #C00000 100%);
 	background: -moz-linear-gradient(to bottom, #E95050 5%, #C00000 100%);
@@ -284,7 +302,7 @@ img a:focus {
 }
 
 .red:hover, .red:focus {
-	background-color: #C00000;
+	background-color: #E95050;
 	background: linear-gradient(to bottom, #C00000 5%, #E95050 100%);
 	background: -o-linear-gradient(to bottom, #C00000 5%, #E95050 100%);
 	background: -moz-linear-gradient(to bottom, #C00000 5%, #E95050 100%);
@@ -295,7 +313,7 @@ img a:focus {
 .purple {
 	border-bottom: 5px solid #281C35;
 	text-shadow: 0px -2px #281C35;
-	background-color: #735494;
+	background-color: #5f417f;
 	background: linear-gradient(to bottom, #735494 5%, #5f417f 100%);
 	background: -o-linear-gradient(to bottom, #735494 5%, #5f417f 100%);
 	background: -moz-linear-gradient(to bottom, #735494 5%, #5f417f 100%);
@@ -304,10 +322,46 @@ img a:focus {
 }
 
 .purple:hover, .purple:focus {
-	background-color: #5f417f;
+	background-color: #735494;
 	background: linear-gradient(to bottom, #5f417f 5%, #735494 100%);
 	background: -o-linear-gradient(to bottom, #5f417f 5%, #735494 100%);
 	background: -moz-linear-gradient(to bottom, #5f417f 5%, #735494 100%);
 	background: -webkit-linear-gradient(to bottom, #5f417f 5%, #735494 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5f417f), color-stop(1, #735494));
+}
+
+/***		Smaller Screen Sizes		***/
+@media (max-width: 1200px) {
+	h1.title.home {
+		font-size: 50px;
+	}
+
+	.action-button {
+		width: 220px;
+		font-size: 18px;
+	}
+	
+	.large-button {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 1000px) {
+	h1.title.home {
+		font-size: 46px;
+	}
+	
+	.lesson-button {
+		width: 180px;
+		font-size: 18px;
+	}
+
+	.action-button {
+		width: 200px;
+		font-size: 15px;
+	}
+	
+	.large-button {
+		font-size: 12px;
+	}
 }

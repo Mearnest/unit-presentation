@@ -11,9 +11,29 @@ block head
 		#main {
 			margin-top: 20px;
 		}
-
-		h3.title.lesson {
+		
+		.row.buttons {
 			margin-top: 40px;
+		}
+		
+		@media (max-height: 800px) {
+			#main {
+				margin-top: -20px;
+			}
+			
+			.row.buttons {
+				margin-top: 25px;
+			}
+		}
+		
+		@media (max-height: 690px) {
+			#main {
+				margin-top: -25px;
+			}
+			
+			.row.buttons.first {
+				margin-top: 0;
+			}
 		}
 
 block main
@@ -22,7 +42,7 @@ block main
 	
 	h3.title.lesson Importance of Introduction
 	
-	.row(style="margin-top: 40px;")
+	.row.buttons.first
 		.col-md-4
 			a(href="/sample-lesson/how-to-video", class="action-button shadow animate orange")
 				span.fa.fa-youtube-play
@@ -47,7 +67,7 @@ block main
 				br
 				span.description See how a teacher applies<br>this lesson in her classroom.
 	
-	.row.second(style="margin-top: 40px;")
+	.row.buttons.second
 		.col-md-4
 			a(href="/sample-lesson/review-exercises", class="action-button shadow animate green")
 				span.fa.fa-pencil-square-o
